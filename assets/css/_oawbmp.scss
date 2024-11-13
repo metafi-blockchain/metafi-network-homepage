@@ -1,0 +1,113 @@
+.mf-oawbmp {
+	padding: 86px 0 73px;
+	background-image: url(../images/open_ai_world_x_blockchain_x_metaverse_platform_bg.png);
+	background-size: cover;
+	text-align: center;
+	h3 {
+		font-weight: 400;
+		font-size: 64px;
+		line-height: 70px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin-bottom: 0;
+	}
+	p {
+		width: 1040px;
+		max-width: 100%;
+		margin: 0 auto 15px auto;
+	}
+	&-slide {
+		margin-bottom: 0 !important;
+	}
+	&-item {
+		text-align: center;
+		img {
+			width: 65vw;
+			margin-left: auto;
+			margin-right: auto;
+
+			@media (min-width: 1600px) {
+				width: 56vw;
+			}
+		}
+	}
+	.slick-arrow {
+		width: 93px;
+		height: 69px;
+		background-size: 100% 100%;
+		padding: 0;
+		cursor: pointer;
+		&::before {
+			display: none;
+		}
+		&.slick-prev {
+			background-image: url(../images/icons/arrow-prev.svg);
+		}
+		&.slick-next {
+			background-image: url(../images/icons/arrow-next.svg);
+		}
+	}
+	.slick-dots {
+		position: relative;
+		bottom: 0;
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		@media (max-width: 1919px) {
+			gap: 20px;
+		}
+		li,
+		li button {
+			width: 61.31px;
+			height: 14.15px;
+			background: #3e4580;
+			border-radius: 23.5793px;
+			&::before {
+				display: none;
+			}
+			&.slick-active {
+				button {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.mf-oawbmp-item img {
+	cursor: zoom-in;
+}
+
+.image-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.9);
+	z-index: 9999;
+}
+
+.image-modal img {
+	max-width: 90%;
+	max-height: 90vh;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.image-modal .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}

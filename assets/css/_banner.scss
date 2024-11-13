@@ -1,0 +1,114 @@
+.mf-banner {
+	background-image: url(../images/banner.png);
+	background-position: bottom center;
+	background-size: cover;
+	padding-top: 171px;
+	padding-bottom: 66px;
+	text-align: center;
+	&-slide {
+		margin-bottom: 0 !important;
+	}
+	&-item {
+		position: relative;
+		h1 {
+			font-weight: 700;
+			font-size: 64px;
+			line-height: 70px;
+			text-align: center;
+			text-transform: uppercase;
+			background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			margin-bottom: 17px;
+		}
+		p {
+			font-style: italic;
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 38px;
+			text-align: center;
+			text-transform: capitalize;
+			background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			margin-bottom: -38px;
+		}
+		img {
+			width: 70vw;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.play {
+			position: absolute;
+			bottom: 237px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 3;
+			cursor: pointer;
+			padding: 0;
+			border: 0;
+			background-color: transparent;
+			outline: 0;
+			width: 136px;
+			height: 136px;
+			&:hover {
+				img {
+					transform: scale(1.2);
+				}
+			}
+			@media (max-width: 1919px) {
+				width: 100px;
+				height: 100px;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				transition: all ease-in-out 0.3s;
+				transform-origin: center;
+			}
+		}
+		.buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 60px;
+		}
+	}
+	.slick-dots {
+		position: relative;
+		bottom: 0;
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		@media (max-width: 1919px) {
+			gap: 20px;
+		}
+		li,
+		li button {
+			width: 61.31px;
+			height: 14.15px;
+			background: rgba($color: #fff, $alpha: 0.3);
+			border-radius: 23.5793px;
+			&::before {
+				display: none;
+			}
+			&.slick-active {
+				button {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}

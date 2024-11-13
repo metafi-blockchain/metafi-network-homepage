@@ -1,0 +1,116 @@
+.mf-oawmeig {
+	padding: 44px 0 37px;
+	background-color: #1b2364;
+	h3 {
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 70px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin-bottom: 20px;
+	}
+	p {
+		width: 1419px;
+		max-width: 100%;
+		margin: 0 auto 38px;
+		text-align: center;
+	}
+	&-slide {
+		margin-bottom: 0 !important;
+		padding-top: 10px;
+	}
+	&-item {
+		transform-origin: center;
+		transform: scale(0.8);
+		opacity: 0.3;
+		transition: all ease-in-out 0.3s;
+		&.slick-active:not(.slick-center) {
+			transform: scale(0.8) translateX(-30px);
+		}
+		&.slick-center {
+			transform: scale(1);
+			opacity: 1;
+		}
+		&.slick-center ~ .slick-active {
+			transform: scale(0.8) translateX(30px);
+		}
+		span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: linear-gradient(180deg, #0c40c6 0%, #8ba7ef 100%);
+			border: 4.64648px solid #a2bdff;
+			border-radius: 77.4414px;
+			overflow: hidden;
+			margin-bottom: 32px;
+			padding: 0 40px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+		p {
+			font-weight: 700;
+			font-size: 41.1509px;
+			line-height: 48px;
+			text-align: center;
+			text-transform: capitalize;
+			color: #ffffff;
+			margin-bottom: 32px;
+		}
+	}
+	.slick-dots {
+		position: relative;
+		bottom: 0;
+		margin-top: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 42px;
+		@media (max-width: 1919px) {
+			gap: 20px;
+		}
+		@media (max-width: 1199px) {
+			gap: 10px;
+		}
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0px;
+			width: 73px;
+			height: 59px;
+			&.slick-active {
+				button {
+					background: #3475d3;
+					border: 4.34667px solid #66acff;
+					color: #fff;
+                    opacity: 1;
+				}
+			}
+		}
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 15px 30px;
+			width: 73px;
+			height: 58px;
+			background: #202a5e;
+			border: 5.16995px solid #324086;
+			border-radius: 15px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 28px;
+			text-transform: capitalize;
+			color: #bad8fb;
+			transition: all ease-in-out 0.3s;
+			opacity: 0.5;
+			&::before {
+				display: none;
+			}
+		}
+	}
+}

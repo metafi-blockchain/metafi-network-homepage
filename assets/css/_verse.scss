@@ -1,0 +1,230 @@
+.mf-verse {
+	padding-top: 70px;
+	background-image: url(../images/metafi_verse.png);
+	background-size: cover;
+	&-title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 60px;
+		text-align: center;
+		color: #ffffff;
+		padding: 10px 0 102px;
+		@media (max-width: 1399px) {
+			line-height: 1.15;
+		}
+		@media (max-width: 1199px) {
+			padding-bottom: 80px;
+		}
+	}
+	&-inner {
+		position: relative;
+		padding-bottom: 209px;
+		@media (max-width: 1199px) {
+			padding-bottom: 150px;
+		}
+		.main-image {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 48vw;
+			z-index: 0;
+		}
+		.buttons {
+			position: absolute;
+			bottom: 84px;
+			left: 40%;
+			display: flex;
+			align-items: center;
+			gap: 40px;
+			z-index: 3;
+			@media (max-width: 1399px) {
+				gap: 20px;
+			}
+		}
+		.description {
+			text-align: center;
+			padding: 10px 20px;
+			color: #bad8fb;
+			background: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0) -2.37%,
+				rgba(0, 0, 0, 0.5) 27.32%,
+				rgba(0, 0, 0, 0.5) 62.12%,
+				rgba(0, 0, 0, 0) 100%
+			);
+			margin-bottom: 11px;
+			div {
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+		.mf-verse-slide,
+		.mf-verse-slide-nav {
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.mf-verse-slide {
+			position: relative;
+			margin-bottom: 32px !important;
+			&-item {
+				border: 6px solid rgba(15, 23, 33, 0.5);
+				border-radius: 30.8191px;
+				overflow: hidden;
+				height: 400px;
+				overflow: hidden;
+
+				@media (max-width: 1199px) {
+					height: 300px;
+				}
+			}
+		}
+		.mf-verse-slide-nav {
+			padding: 0 60px;
+			margin-bottom: 0 !important;
+			&-item {
+				height: 150px;
+				margin: 0 5px;
+				border: 3.08191px solid rgba(15, 23, 33, 0.5);
+				border-radius: 30.8191px;
+				overflow: hidden;
+				position: relative;
+				@media (max-width: 1399px) {
+					height: 120px;
+				}
+				@media (max-width: 1199px) {
+					height: 100px;
+				}
+				&.slick-current {
+					&::after {
+						opacity: 0;
+					}
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(
+						0deg,
+						rgba(0, 0, 0, 0.6),
+						rgba(0, 0, 0, 0.6)
+					);
+					opacity: 1;
+					transition: all ease-in-out 0.3s;
+				}
+			}
+			.slick-arrow {
+				width: 51.37px;
+				height: 61.64px;
+				background-size: 100% 100%;
+				padding: 0;
+				cursor: pointer;
+				&::before {
+					display: none;
+				}
+				&.slick-prev {
+					left: 0;
+					background-image: url(../images/icons/arrow-prev.svg);
+				}
+				&.slick-next {
+					right: 0;
+					background-image: url(../images/icons/arrow-next.svg);
+				}
+			}
+		}
+	}
+	&-tabs {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		z-index: 4;
+		li {
+			margin-bottom: 30px;
+			display: flex;
+			gap: 9px;
+			transition: all ease-in-out 0.3s;
+			cursor: pointer;
+			@media (max-width: 1199px) {
+				margin-bottom: 20px;
+			}
+			&.active,
+			&:hover {
+				.image {
+					opacity: 1;
+				}
+				.info {
+					background: linear-gradient(
+						90.17deg,
+						rgba(70, 176, 238, 0.465) 21.89%,
+						rgba(70, 176, 238, 0.05) 78.07%
+					);
+					&::before {
+						background: #b7fff7;
+					}
+					.name {
+						color: #fff;
+					}
+					.title {
+						color: #bad8fb;
+					}
+				}
+			}
+			.image {
+				width: 65px;
+				height: 65px;
+				border-radius: 10px;
+				overflow: hidden;
+				opacity: 0.3;
+				transition: all ease-in-out 0.3s;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.info {
+				background: linear-gradient(
+					90deg,
+					rgba(27, 61, 112, 0.3) 0%,
+					rgba(1, 30, 73, 0) 87.72%
+				);
+				filter: drop-shadow(0px 2.78067px 2.78067px rgba(0, 0, 0, 0.25));
+				border-radius: 0px 20.855px 20.855px 0px;
+				position: relative;
+				padding: 6px 40px 6px 20px;
+				transition: all ease-in-out 0.3s;
+				&::before {
+					content: '';
+					position: absolute;
+					width: 6.46px;
+					height: 100%;
+					left: 0px;
+					top: 0px;
+					background: #212363;
+					border-radius: 20.855px;
+					transition: all ease-in-out 0.3s;
+				}
+			}
+			.name {
+				text-transform: uppercase;
+				color: #657990;
+				margin-bottom: 6px;
+				transition: all ease-in-out 0.3s;
+			}
+			.title {
+				font-style: italic;
+				color: rgba($color: #bad8fb, $alpha: 0.5);
+				transition: all ease-in-out 0.3s;
+			}
+		}
+	}
+}

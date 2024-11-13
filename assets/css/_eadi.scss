@@ -1,0 +1,138 @@
+.mf-eadi {
+	padding: 112px 0 100px;
+	background-image: url(../images/experience_ai_driven_nnovation.png);
+	background-size: cover;
+	@media (max-width: 1199px) {
+		padding: 80px 0 40px;
+	}
+	h3 {
+		font-weight: 400;
+		font-size: 64px;
+		line-height: 70px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 174px;
+		text-align: center;
+	}
+	&-items {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&-item {
+		padding: 40px 15px 0;
+		position: relative;
+		width: 13.88vw;
+		&:nth-child(1) {
+			margin-top: -50px;
+		}
+		&:nth-child(2) {
+			width: 22.44vw;
+			.mf-eadi-item-title {
+				font-size: 32px;
+				line-height: 39px;
+				margin-bottom: 18px;
+				@media (max-width: 1919px) {
+					font-size: 28px;
+					margin-bottom: 8px;
+				}
+				@media (max-width: 1399px) {
+					font-size: 24px;
+				}
+			}
+			.mf-eadi-item-image {
+				border-width: 3.91511px;
+				button {
+					width: 113.54px;
+					height: 113.54px;
+					@media (max-width: 1919px) {
+						width: 90px;
+						height: 90px;
+					}
+				}
+			}
+		}
+		&:nth-child(3) {
+			margin-top: -250px;
+			margin-left: -20px;
+			margin-right: 20px;
+		}
+		&:nth-child(4) {
+			margin-top: -50px;
+		}
+		&:nth-child(5) {
+			margin-top: -150px;
+		}
+		&-bg {
+			width: 100%;
+		}
+		&-info {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			text-align: center;
+		}
+		&-title {
+			font-family: 'HelveticaNeue';
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: center;
+			color: #ffffff;
+			margin-bottom: 10px;
+			@media (max-width: 1919px) {
+				font-size: 18px;
+				line-height: 1.15;
+				margin-bottom: 5px;
+			}
+			@media (max-width: 1399px) {
+				font-size: 16px;
+			}
+		}
+		&-image {
+			position: relative;
+			overflow: hidden;
+			width: calc(100% - 30px);
+			margin-left: auto;
+			margin-right: auto;
+			border: 2.42px solid rgba(15, 23, 33, 0.5);
+			border-radius: 29.3634px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 70.24px;
+				height: 70.24px;
+				border-radius: 50%;
+				padding: 0;
+				outline: 0;
+				border: 0;
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: transparent;
+				@media (max-width: 1919px) {
+					width: 50px;
+					height: 50px;
+				}
+				img,
+				svg {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

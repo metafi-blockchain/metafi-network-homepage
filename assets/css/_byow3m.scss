@@ -1,0 +1,64 @@
+.mf-byow3m {
+	padding: 148px 0 185px;
+	background-image: url(../images/build_your_own_web3_metaverse.png);
+	background-size: cover;
+	@media (max-width: 1199px) {
+		padding: 100px 0;
+	}
+	&-header {
+		display: flex;
+		gap: 40px;
+		&-subtitle {
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 38px;
+			text-transform: capitalize;
+			color: #ffffff;
+		}
+		h3 {
+			font-weight: 700;
+			font-size: 64px;
+			line-height: 70px;
+			text-transform: uppercase;
+			color: #ffffff;
+			margin-bottom: 12px;
+		}
+		button {
+			width: 135px;
+			min-width: 135px;
+			height: 135px;
+			border-radius: 50%;
+			margin-top: 19px;
+			transition: all ease-in-out 0.3s;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			border: 0;
+			outline: 0;
+			padding: 0;
+			color: rgba($color: #d9d9d9, $alpha: 0.5);
+			&:hover {
+				color: rgba($color: #d9d9d9, $alpha: 1);
+			}
+			img,
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+			@media (max-width: 1399px) {
+				width: 100px;
+				height: 100px;
+				min-width: 100px;
+				margin-top: 10px;
+			}
+		}
+	}
+	p {
+		margin-bottom: 45px;
+	}
+	.buttons {
+		display: flex;
+		gap: 20px;
+	}
+}

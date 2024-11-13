@@ -1,0 +1,66 @@
+.mf-tclg {
+	padding-top: calc(273px + 92px);
+	padding-bottom: 55px;
+	background-image: url(../images/trusted_community_led_governance-bg.png);
+	background-size: cover;
+	@media (max-width: 1199px) {
+		padding-top: calc(200px + 92px);
+	}
+	h3 {
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 70px;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin-bottom: 10px;
+	}
+	p {
+		text-transform: capitalize;
+		color: #ffffff;
+		margin-bottom: 22px;
+	}
+	a {
+		display: inline-flex;
+		margin-bottom: 29px;
+	}
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 14px;
+		row-gap: 31px;
+		@media (max-width: 1399px) {
+			gap: 14px;
+		}
+		.mf-tclg-item {
+			padding: 20px 30px;
+			gap: 10px;
+			background: rgba(15, 23, 33, 0.6);
+			border-radius: 30px;
+			width: calc(50% - 7px);
+			@media (max-width: 1399px) {
+				padding: 20px;
+			}
+			&-title {
+				font-family: 'Roboto Condensed', serif;
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 38px;
+				text-transform: capitalize;
+				color: #ffffff;
+				margin-bottom: 20px;
+				@media (max-width: 1399px) {
+					font-size: 24px;
+					line-height: 1.15;
+					margin-bottom: 10px;
+				}
+			}
+			p {
+				text-transform: capitalize;
+				margin-bottom: 0;
+				@media (max-width: 1399px) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
