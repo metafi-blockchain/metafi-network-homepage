@@ -21,12 +21,22 @@
 		padding-top: 10px;
 	}
 	&-item {
+		cursor: pointer;
 		transform-origin: center;
 		transform: scale(0.8);
 		opacity: 0.3;
 		transition: all ease-in-out 0.3s;
+		@media (max-width: 1919px) {
+			transform: scale(0.9);
+		}
+		&:hover {
+			opacity: 1;
+		}
 		&.slick-active:not(.slick-center) {
 			transform: scale(0.8) translateX(-30px);
+			@media (max-width: 1919px) {
+				transform: scale(0.9) translateX(-20px);
+			}
 		}
 		&.slick-center {
 			transform: scale(1);
@@ -34,6 +44,9 @@
 		}
 		&.slick-center ~ .slick-active {
 			transform: scale(0.8) translateX(30px);
+			@media (max-width: 1919px) {
+				transform: scale(0.9) translateX(20px);
+			}
 		}
 		span {
 			display: flex;
@@ -59,6 +72,10 @@
 			text-transform: capitalize;
 			color: #ffffff;
 			margin-bottom: 32px;
+			@media (max-width: 1919px) {
+				font-size: 32px;
+				line-height: 1;
+			}
 		}
 	}
 	.slick-dots {
@@ -70,10 +87,8 @@
 		justify-content: center;
 		gap: 42px;
 		@media (max-width: 1919px) {
-			gap: 20px;
-		}
-		@media (max-width: 1199px) {
 			gap: 10px;
+			margin-top: 10px;
 		}
 		li {
 			display: flex;
@@ -82,12 +97,17 @@
 			padding: 0px;
 			width: 73px;
 			height: 59px;
+			@media (max-width: 1919px) {
+				width: 55px;
+				height: 50px;
+				margin: 0;
+			}
 			&.slick-active {
 				button {
 					background: #3475d3;
 					border: 4.34667px solid #66acff;
 					color: #fff;
-                    opacity: 1;
+					opacity: 1;
 				}
 			}
 		}
@@ -108,6 +128,12 @@
 			color: #bad8fb;
 			transition: all ease-in-out 0.3s;
 			opacity: 0.5;
+			@media (max-width: 1919px) {
+				width: 55px;
+				height: 50px;
+				padding: 15px;
+				font-size: 18px;
+			}
 			&::before {
 				display: none;
 			}

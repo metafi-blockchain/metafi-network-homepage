@@ -55,17 +55,29 @@ $(document).ready(function () {
 		autoplaySpeed: 2000
 	});
 	$('.mf-oawmeig-slide').slick({
-		slidesToShow: 3,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		centerMode: true,
-		centerPadding: '120px',
+		centerPadding: '10px',
 		dots: true,
 		arrows: false,
 		infinite: true,
 		autoPlay: true,
-		autoplaySpeed: 2000
+		autoplaySpeed: 2000,
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					centerPadding: '120px',
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
-
+	$('.mf-oawmeig-item').on('click', function () {
+		$('.mf-oawmeig-slide').slick('slickGoTo', $(this).data('slide'));
+	});
 	$('#PlayVideo').on('click', () => {
 		$('#videoModal iframe').attr(
 			'src',
@@ -79,3 +91,12 @@ $(document).ready(function () {
 		});
 	});
 });
+function playVideo(url) {
+	$('#IFRAME_VIDEO').attr('src', url);
+	var myModalEl = document.getElementById('videoModal');
+	var videoModal = new bootstrap.Modal(myModalEl, {});
+	videoModal.show();
+	myModalEl.addEventListener('hidden.bs.modal', function (event) {
+		$('#IFRAME_VIDEO').attr('src', '');
+	});
+}

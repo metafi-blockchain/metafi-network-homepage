@@ -138,7 +138,7 @@
 							<h1>open AI WORLD X Metavearse</h1>
 							<p>Build a world that benefits all, owned by all</p>
 							<img src="assets/images/banner-image.png" alt="" />
-							<button type="button" class="play">
+							<button type="button" class="play"  onclick="playVideo('https://www.youtube.com/embed/XF8UbB5LhFw?autoplay=1&enablejsapi=1')">
 								<img src="assets/images/icons/play-video.svg" alt="" />
 							</button>
 							<div class="buttons">
@@ -258,23 +258,27 @@
 					</p>
 				</div>
 				<div class="mf-oawmeig-slide">
-					<div class="mf-oawmeig-item">
+					<div class="mf-oawmeig-item" data-slide="0">
 						<span><img src="assets/images/metavearse_hub.png" alt="" /></span>
 						<p>Metaverse Hub</p>
 					</div>
-					<div class="mf-oawmeig-item">
+					<div class="mf-oawmeig-item" data-slide="1">
 						<span><img src="assets/images/metavearse_hub.png" alt="" /></span>
 						<p>Metaverse Hub</p>
 					</div>
-					<div class="mf-oawmeig-item">
+					<div class="mf-oawmeig-item" data-slide="2">
 						<span><img src="assets/images/metavearse_hub.png" alt="" /></span>
 						<p>Metaverse Hub</p>
 					</div>
-					<div class="mf-oawmeig-item">
+					<div class="mf-oawmeig-item" data-slide="3">
 						<span><img src="assets/images/metavearse_hub.png" alt="" /></span>
 						<p>Metaverse Hub</p>
 					</div>
-					<div class="mf-oawmeig-item">
+					<div class="mf-oawmeig-item" data-slide="4">
+						<span><img src="assets/images/metavearse_hub.png" alt="" /></span>
+						<p>Metaverse Hub</p>
+					</div>
+					<div class="mf-oawmeig-item" data-slide="4">
 						<span><img src="assets/images/metavearse_hub.png" alt="" /></span>
 						<p>Metaverse Hub</p>
 					</div>
@@ -1176,6 +1180,20 @@
 			<img id="modalImage" src="" alt="" />
 		</div>
 
+		 <!-- Modal Video -->
+		 <div class="modal fade tq_modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body p-0">
+						<iframe id="IFRAME_VIDEO" style="width: 100%; min-height:80vh" src="#" frameborder="0" allow="autoplay"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<script>
 			function openImageModal(imgSrc) {
 				document.getElementById('modalImage').src = imgSrc;
