@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metafi-landing-page-deployment
+  namespace: metafi-system
+  labels:
+    app: metafi-landing-page
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: metafi-landing-page
+  template:
+    metadata:
+      labels:
+        app: metafi-landing-page
+    spec:
+      containers:
+      - name: metafi-home-page-container
+        image: metafi/metafi-landing-page:0.1.0
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"

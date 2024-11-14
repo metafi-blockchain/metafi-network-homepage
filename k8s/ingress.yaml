@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: metafi-landing-page-ingress
+  namespace: metafi-system
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing  # Để ALB có thể truy cập từ bên ngoài
+    alb.ingress.kubernetes.io/target-type: instance 
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'  # Định nghĩa các cổng ALB lắng nghe
+spec:
+  ingressClassName: alb  # Thay vì dùng annotation, xác định class trực tiếp tại đây
+  rules:
+  - host: metafi.gg
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: metafi-landing-page-service
+            port:
+              number: 80
