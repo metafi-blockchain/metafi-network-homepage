@@ -3,14 +3,11 @@
 	--bs-body-font-family: 'Poppins', sans-serif;
 	--bs-body-bg: #0a1f59;
 	--bs-body-bg-rgb: 10, 31, 89;
-	--bs-body-color: #bad8fb;
+	--bs-body-color: #fff;
 	--bs-body-color-rgb: 186, 216, 251;
-	--bs-body-font-size: 20px;
-	--bs-body-line-height: 1.15;
-	--bs-body-font-weight: 500;
-	@media (max-width: 1919px) {
-		--bs-body-font-size: 18px;
-	}
+	--bs-body-font-size: 16px;
+	--bs-body-line-height: 1.5;
+	--bs-body-font-weight: 400;
 }
 * {
 	scrollbar-width: thin;
@@ -60,7 +57,7 @@ a {
 			height: calc(100% + 2px);
 			filter: brightness(0.9);
 		}
-		span{
+		span {
 			transform: scale(0.99);
 		}
 	}
@@ -77,7 +74,7 @@ a {
 		}
 		&::before,
 		&::after {
-			border-radius: 17.5782px;
+			border-radius: 14px;
 		}
 		&::before {
 			top: 6.44px;
@@ -260,11 +257,9 @@ a {
 @import './tclg';
 @import './footer';
 .mf-title {
-	@media (max-width: 1919px) {
-		font-size: 50px !important;
-		line-height: 1 !important;
-	}
-	@media (max-width: 1199px) {
-		font-size: 45px !important;
-	}
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 72px;
+	color: #ffffff;
+	margin-bottom: 0;
 }

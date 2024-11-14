@@ -11,12 +11,8 @@
 		@media (max-width: 1919px) {
 			padding: 10% 0 10%;
 		}
-		h3 {
-			font-weight: 400;
-			font-size: 64px;
-			line-height: 70px;
-			text-transform: uppercase;
-			color: #ffffff;
+		.mf-title {
+			line-height: 96px;
 			margin-bottom: 12px;
 		}
 	}
@@ -65,26 +61,17 @@
 			position: relative;
 			z-index: 2;
 			font-weight: 700;
-			font-size: 32px;
-			line-height: 39px;
+			font-size: 26px;
+			line-height: 36px;
 			text-align: center;
 			color: #ffffff;
 			margin-bottom: 12px;
-			@media (max-width: 1199px) {
-				font-size: 24px;
-				line-height: 1.15;
-			}
 		}
 		&-description {
 			z-index: 2;
 			padding: 0 32px 16px;
 			position: relative;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 20px;
-			line-height: 24px;
 			text-align: center;
-			color: #bad8fb;
 		}
 	}
 }

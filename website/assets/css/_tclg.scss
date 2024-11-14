@@ -6,13 +6,12 @@
 	@media (max-width: 1199px) {
 		padding-top: calc(200px + 92px);
 	}
-	h3 {
+	.mf-title {
 		font-weight: 700;
-		font-size: 64px;
-		line-height: 70px;
+		font-size: 39.9273px;
+		line-height: 50px;
 		text-transform: uppercase;
-		color: #ffffff;
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 	}
 	p {
 		text-transform: capitalize;
@@ -42,14 +41,12 @@
 			}
 			&-title {
 				font-weight: 700;
-				font-size: 32px;
-				line-height: 38px;
+				font-size: 30px;
+				line-height: 1;
 				text-transform: capitalize;
 				color: #ffffff;
-				margin-bottom: 20px;
+				margin-bottom: 24px;
 				@media (max-width: 1399px) {
-					font-size: 24px;
-					line-height: 1.15;
 					margin-bottom: 10px;
 				}
 			}

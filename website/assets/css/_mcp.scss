@@ -1,30 +1,18 @@
 .mf-mcp {
-	padding: 24px 0 95px;
+	padding: 77px 0;
 	background-image: url(../images/metafi_creator_program.png);
 	background-size: cover;
-	&-header {
-		padding: 14px 0;
-		margin-bottom: 46px;
-		h3 {
-			font-weight: 700;
-			font-size: 64px;
-			line-height: 70px;
-			text-align: center;
-			text-transform: uppercase;
-			color: #ffffff;
-			margin-bottom: 24px;
-		}
-		p {
-			text-align: center;
-			text-transform: capitalize;
-			margin-bottom: 16px;
-		}
-		.buttons {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 29px;
-		}
+	.mf-title {
+		line-height: 88px;
+		margin-bottom: 48px;
+		text-align: center;
+	}
+	.buttons {
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 29px;
 	}
 	.row {
 		--bs-gutter-x: 45px;
@@ -80,17 +68,14 @@
 			}
 			h3 {
 				font-weight: 700;
-				font-size: 32px;
-				line-height: 39px;
+				font-size: 24px;
+				line-height: 40px;
 				color: #ffffff;
 				margin-bottom: 0;
-				@media (max-width: 1399px) {
-					font-size: 24px;
-				}
 			}
 			p {
 				margin-bottom: 0;
-				color: #bad8fb;
+				color: #fff;
 				display: -webkit-box;
 				-webkit-line-clamp: 3;
 				-webkit-box-orient: vertical;

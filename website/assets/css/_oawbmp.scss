@@ -1,21 +1,16 @@
 .mf-oawbmp {
-	padding: 86px 0 73px;
+	padding: 81px 0 67px;
 	background-image: url(../images/open_ai_world_x_blockchain_x_metaverse_platform_bg.png);
 	background-size: cover;
 	text-align: center;
-	h3 {
-		font-weight: 400;
-		font-size: 64px;
-		line-height: 70px;
+	background: linear-gradient(180deg, #000000 5%, #020947 100%);
+	.mf-title {
 		text-align: center;
-		text-transform: uppercase;
-		color: #ffffff;
-		margin-bottom: 0;
 	}
 	p {
-		width: 1040px;
+		width: 951px;
 		max-width: 100%;
-		margin: 0 auto 15px auto;
+		margin: 0 auto 22px auto;
 	}
 	&-slide {
 		margin-bottom: 0 !important;
@@ -38,7 +33,7 @@
 		background-size: 100% 100%;
 		padding: 0;
 		cursor: pointer;
-		@media(max-width:1919px){
+		@media (max-width: 1919px) {
 			width: 68px;
 			height: 50px;
 		}
@@ -69,7 +64,7 @@
 			height: 14.15px;
 			background: #3e4580;
 			border-radius: 23.5793px;
-			@media(max-width:1919px){
+			@media (max-width: 1919px) {
 				width: 40px;
 				height: 10px;
 				border-radius: 10px;
@@ -97,7 +92,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.9);
+	background: rgba(0, 0, 0, 0.9);
 	z-index: 9999;
 }
 

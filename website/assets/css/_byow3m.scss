@@ -1,5 +1,5 @@
 .mf-byow3m {
-	padding: 148px 0 185px;
+	padding: 130px 0 159px;
 	background-image: url(../images/build_your_own_web3_metaverse.png);
 	background-size: cover;
 	@media (max-width: 1199px) {
@@ -9,19 +9,16 @@
 		display: flex;
 		gap: 40px;
 		&-subtitle {
-			font-weight: 500;
-			font-size: 32px;
-			line-height: 38px;
+			font-size: 24px;
+			line-height: 36px;
 			text-transform: capitalize;
 			color: #ffffff;
+			margin-bottom: 6px;
 		}
 		h3 {
-			font-weight: 700;
-			font-size: 64px;
-			line-height: 70px;
+			line-height: 60px;
 			text-transform: uppercase;
-			color: #ffffff;
-			margin-bottom: 12px;
+			margin-bottom: 15px;
 		}
 		button {
 			width: 135px;
@@ -29,6 +26,7 @@
 			height: 135px;
 			border-radius: 50%;
 			margin-top: 19px;
+			margin-left: 20px;
 			transition: all ease-in-out 0.3s;
 			display: inline-flex;
 			align-items: center;
