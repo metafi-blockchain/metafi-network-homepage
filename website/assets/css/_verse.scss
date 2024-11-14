@@ -1,20 +1,10 @@
 .mf-verse {
-	padding-top: 70px;
+	padding-top: 63px;
 	background-image: url(../images/metafi_verse.png);
 	background-size: cover;
-	&-title {
-		font-weight: 700;
-		font-size: 32px;
-		line-height: 60px;
-		text-align: center;
-		color: #ffffff;
-		padding: 10px 0 102px;
-		@media (max-width: 1399px) {
-			line-height: 1.15;
-		}
-		@media (max-width: 1199px) {
-			padding-bottom: 80px;
-		}
+	.mf-title {
+		line-height: 54px;
+		margin-bottom: 30px;
 	}
 	&-inner {
 		position: relative;
@@ -122,8 +112,8 @@
 				}
 			}
 			.slick-arrow {
-				width: 51.37px;
-				height: 61.64px;
+				width: 46.15px;
+				height: 55.38px;
 				background-size: 100% 100%;
 				padding: 0;
 				cursor: pointer;

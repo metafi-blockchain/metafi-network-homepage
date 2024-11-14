@@ -23,15 +23,12 @@
 		}
 	}
 	&-item {
+		height: 330px;
 		display: block;
 		position: relative;
-		height: 100%;
-		border-radius: 48px;
+		border-radius: 20px;
 		overflow: hidden;
 		text-decoration: none;
-		@media (max-width: 1199px) {
-			border-radius: 24px;
-		}
 		&:hover {
 			.readmore {
 				max-height: calc(38px + 18px + 20px);
@@ -59,12 +56,9 @@
 			align-items: flex-start;
 			padding: 10px 20px;
 			background: rgba(0, 0, 0, 0.5);
-			border-radius: 0px 0px 48px 48px;
+			border-radius: 0px 0px 20px 20px;
 			@media (max-width: 1399px) {
 				padding-bottom: 20px;
-			}
-			@media (max-width: 1199px) {
-				border-radius: 0 0 24px 24px;
 			}
 			h3 {
 				font-weight: 700;
