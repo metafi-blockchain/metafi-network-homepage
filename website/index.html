@@ -59,7 +59,7 @@
 						<img src="assets/images/logo.png" alt="MetaFi" />
 					</a>
 					<div class="mf-header-menu">
-						<ul>
+						<ul id="main-menu">
 							<li>
 								<a href="#">
 									<img src="assets/images/icons/ecosystem.svg" alt="" />
@@ -96,6 +96,8 @@
 									<span>Marketplace</span>
 								</a>
 							</li>
+						</ul>
+						<ul>
 							<li>
 								<a href="#" class="btn btn-primary">
 									<span>Launchpad</span>
@@ -107,6 +109,24 @@
 								</a>
 							</li>
 						</ul>
+
+						<button type="button" class="btn btn-warning toggle-menu">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="800px"
+								height="800px"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M4 6H20M4 12H20M4 18H20"
+									stroke="#fff"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -138,7 +158,11 @@
 							<h1>open AI WORLD X Metavearse</h1>
 							<p>Build a world that benefits all, owned by all</p>
 							<img src="assets/images/banner-image.png" alt="" />
-							<button type="button" class="play"  onclick="playVideo('https://www.youtube.com/embed/XF8UbB5LhFw?autoplay=1&enablejsapi=1')">
+							<button
+								type="button"
+								class="play"
+								onclick="playVideo('https://www.youtube.com/embed/XF8UbB5LhFw?autoplay=1&enablejsapi=1')"
+							>
 								<img src="assets/images/icons/play-video.svg" alt="" />
 							</button>
 							<div class="buttons">
@@ -1180,20 +1204,37 @@
 			<img id="modalImage" src="" alt="" />
 		</div>
 
-		 <!-- Modal Video -->
-		 <div class="modal fade tq_modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+		<!-- Modal Video -->
+		<div
+			class="modal fade tq_modal"
+			id="videoModal"
+			tabindex="-1"
+			aria-labelledby="videoModalLabel"
+			aria-hidden="true"
+		>
 			<div class="modal-dialog modal-dialog-centered modal-xl">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
 					</div>
 					<div class="modal-body p-0">
-						<iframe id="IFRAME_VIDEO" style="width: 100%; min-height:80vh" src="#" frameborder="0" allow="autoplay"></iframe>
+						<iframe
+							id="IFRAME_VIDEO"
+							style="width: 100%; min-height: 80vh"
+							src="#"
+							frameborder="0"
+							allow="autoplay"
+						></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+
 		<script>
 			function openImageModal(imgSrc) {
 				document.getElementById('modalImage').src = imgSrc;
