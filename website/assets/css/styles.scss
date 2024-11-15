@@ -51,6 +51,10 @@ a {
 	border: 0;
 	white-space: nowrap;
 	transition: transform 0.2s ease-in-out;
+	@media (max-width: 991px) {
+		height: 40px;
+		min-width: 120px;
+	}
 	&:not(:disabled):hover,
 	&:not(:disabled).active {
 		&::after {
@@ -72,6 +76,11 @@ a {
 			height: 56px;
 			border-radius: 15px;
 		}
+		@media (max-width: 991px) {
+			min-width: 135px;
+			height: 45px;
+			border-radius: 10px;
+		}
 		&::before,
 		&::after {
 			border-radius: 14px;
@@ -86,6 +95,9 @@ a {
 			@media (max-width: 1919px) {
 				font-size: 22px;
 				line-height: 1;
+			}
+			@media (max-width: 991px) {
+				font-size: 18px;
 			}
 		}
 	}
@@ -262,4 +274,12 @@ a {
 	line-height: 72px;
 	color: #ffffff;
 	margin-bottom: 0;
+	@media (max-width: 1199px) {
+		font-size: 40px;
+		line-height: 60px;
+	}
+	@media(max-width:991px){
+		font-size: 30px;
+		line-height: 50px;
+	}
 }

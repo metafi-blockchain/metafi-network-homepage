@@ -2,10 +2,16 @@
 	padding: 77px 0;
 	background-image: url(../images/metafi_creator_program.png);
 	background-size: cover;
+	@media (max-width: 991px) {
+		padding: 40px 0 80px;
+	}
 	.mf-title {
 		line-height: 88px;
 		margin-bottom: 48px;
 		text-align: center;
+		@media (max-width: 991px) {
+			margin-bottom: 24px;
+		}
 	}
 	.buttons {
 		margin-top: 50px;
@@ -13,6 +19,9 @@
 		align-items: center;
 		justify-content: flex-end;
 		gap: 29px;
+		@media (max-width: 1919px) {
+			margin-top: 30px;
+		}
 	}
 	.row {
 		--bs-gutter-x: 45px;
@@ -20,6 +29,10 @@
 		@media (max-width: 1199px) {
 			--bs-gutter-x: 24px;
 			--bs-gutter-y: 24px;
+		}
+		@media (max-width: 991px) {
+			--bs-gutter-x: 40px;
+			--bs-gutter-y: 40px;
 		}
 	}
 	&-item {
@@ -29,6 +42,9 @@
 		border-radius: 20px;
 		overflow: hidden;
 		text-decoration: none;
+		@media (max-width: 991px) {
+			height: 260px;
+		}
 		&:hover {
 			.readmore {
 				max-height: calc(38px + 18px + 20px);
@@ -66,6 +82,14 @@
 				line-height: 40px;
 				color: #ffffff;
 				margin-bottom: 0;
+				@media (max-width: 1199px) {
+					font-size: 20px;
+					line-height: 1.5;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					max-width: 100%;
+				}
 			}
 			p {
 				margin-bottom: 0;

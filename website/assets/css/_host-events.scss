@@ -5,15 +5,25 @@
 	@media (max-width: 1399px) {
 		padding-top: 180px;
 	}
+	@media (max-width: 991px) {
+		padding: 80px 0 40px;
+	}
 	&-header {
 		min-height: 172px;
 		margin-bottom: 220px;
 		@media (max-width: 1399px) {
 			margin-bottom: 120px;
 		}
+		@media (max-width: 991px) {
+			min-height: unset;
+			margin-bottom: 40px;
+		}
 		h3 {
 			line-height: 96px;
 			margin-bottom: 8px;
+			@media (max-width: 991px) {
+				line-height: 1.5;
+			}
 		}
 		p {
 			margin-bottom: 0;
@@ -52,6 +62,10 @@
 				color: #ffffff;
 				margin: -2px 0px;
 				white-space: nowrap;
+				@media (max-width: 1199px) {
+					font-size: 18px;
+					line-height: 1.5;
+				}
 			}
 			div {
 				padding: 10px;

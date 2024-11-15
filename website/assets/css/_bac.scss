@@ -11,6 +11,9 @@
 		@media (max-width: 1919px) {
 			padding: 10% 0 10%;
 		}
+		@media (max-width: 991px) {
+			padding: 6% 0 4%;
+		}
 		.mf-title {
 			line-height: 96px;
 			margin-bottom: 12px;
@@ -66,12 +69,28 @@
 			text-align: center;
 			color: #ffffff;
 			margin-bottom: 12px;
+			@media (max-width: 1199px) {
+				font-size: 22px;
+				line-height: 1.15;
+			}
+			@media (max-width: 991px) {
+				font-size: 20px;
+			}
 		}
 		&-description {
 			z-index: 2;
 			padding: 0 32px 16px;
 			position: relative;
 			text-align: center;
+			@media (max-width: 991px) {
+				div {
+					display: -webkit-box;
+					-webkit-line-clamp: 5;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
 		}
 	}
 }
