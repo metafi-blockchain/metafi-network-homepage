@@ -1234,8 +1234,15 @@ h6 {
 
 .mf-verse {
   padding-top: 70px;
-  background-image: url(../images/metafi_verse.png);
-  background-size: cover;
+  position: relative;
+}
+.mf-verse #verse-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .mf-verse-title {
   font-weight: 700;
@@ -1316,6 +1323,24 @@ h6 {
   overflow: hidden;
   height: 400px;
   overflow: hidden;
+  position: relative;
+}
+.mf-verse-inner .mf-verse-slide-item .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 6vw;
+  height: 6vw;
+  padding: 0;
+}
+.mf-verse-inner .mf-verse-slide-item .play img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media (max-width: 1199px) {
   .mf-verse-inner .mf-verse-slide-item {
