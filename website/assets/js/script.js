@@ -174,6 +174,15 @@ $(document).ready(function () {
 					slidesToShow: 3,
 					slidesToScroll: 1
 				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					centerPadding: '10px',
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+				}
 			}
 		]
 	});

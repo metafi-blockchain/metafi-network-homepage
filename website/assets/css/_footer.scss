@@ -61,6 +61,10 @@
 		@media (max-width: 991px) {
 			flex-wrap: nowrap;
 		}
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
 	}
 	&-menu {
 		list-style: none;

@@ -95,6 +95,12 @@
 					margin-left: auto;
 				}
 			}
+
+			@media (max-width: 767px) {
+				&:last-of-type {
+					display: none;
+				}
+			}
 			li {
 				a:not(.btn) {
 					display: inline-flex;

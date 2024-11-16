@@ -1,6 +1,7 @@
 .mf-oawmeig {
 	padding: 36px 0 66px;
 	background-color: #1b2364;
+	overflow: hidden;
 	.mf-title {
 		text-align: center;
 	}
@@ -16,6 +17,7 @@
 	&-slide {
 		margin-bottom: 0 !important;
 		padding-top: 10px;
+		overflow: hidden;
 	}
 	&-item {
 		cursor: pointer;
@@ -43,6 +45,10 @@
 			-webkit-box-orient: vertical;
 			overflow: hidden;
 			text-overflow: ellipsis;
+			@media (max-width: 767px) {
+				width: 100%;
+				max-width: unset;
+			}
 		}
 		p {
 			opacity: 0;
@@ -64,17 +70,16 @@
 		}
 		&.slick-center ~ .slick-active {
 			transform: scale(0.8) translate(30px, -20px);
+
+			@media (max-width: 767px) {
+				transform: unset;
+			}
 		}
 		span {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background: linear-gradient(180deg, #0c40c6 0%, #8ba7ef 100%);
-			border: 4.64648px solid #a2bdff;
-			border-radius: 30px;
-			overflow: hidden;
 			margin-bottom: 32px;
-			padding: 0 40px;
 			img {
 				width: 100%;
 				height: 100%;
@@ -102,6 +107,35 @@
 		@media (max-width: 1919px) {
 			gap: 10px;
 			margin-top: 10px;
+		}
+		@media (max-width: 767px) {
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80%;
+			display: flex !important;
+
+			li {
+				width: calc(12.5% - 10px) !important;
+				height: 10px !important;
+				border-radius: 10px;
+				button {
+					width: 100% !important;
+					height: 10px !important;
+					border-radius: 10px;
+					background: #3e4580;
+					color: transparent !important;
+					padding: 0 !important;
+					border: none !important;
+				}
+
+				&.slick-active {
+					background: #fff !important;
+					border: none !important;
+					button {
+						background: #fff !important;
+					}
+				}
+			}
 		}
 		li {
 			display: flex;
