@@ -113,6 +113,15 @@
 		@media (max-width: 1399px) {
 			gap: 20px;
 		}
+		@media (max-width: 991px) {
+			.btn.btn-lg {
+				width: 100%;
+			}
+
+			.btn-lg::after {
+				border-radius: 10px;
+			}
+		}
 	}
 	&-image {
 		width: 130%;

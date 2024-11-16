@@ -35,6 +35,13 @@
 				left: auto;
 				right: 0;
 			}
+			@media (max-width: 767px) {
+				bottom: unset;
+				top: 14%;
+				width: 100%;
+				height: auto;
+				left: 80px;
+			}
 		}
 		.buttons {
 			position: absolute;
@@ -109,6 +116,11 @@
 						height: 100%;
 						object-fit: cover;
 					}
+
+					@media (max-width: 475px) {
+						width: 80px;
+						height: 80px;
+					}
 				}
 
 				@media (max-width: 1199px) {
@@ -165,11 +177,27 @@
 				&.slick-prev {
 					left: 0;
 					background-image: url(../images/icons/arrow-prev.svg);
+
+					@media (max-width: 475px) {
+						left: -10px;
+					}
 				}
 				&.slick-next {
 					right: 0;
 					background-image: url(../images/icons/arrow-next.svg);
+
+					@media (max-width: 475px) {
+						right: -10px;
+					}
 				}
+
+				@media (max-width: 475px) {
+					width: 30px;
+					height: 30px;
+				}
+			}
+			@media (max-width: 475px) {
+				padding: 0 20px;
 			}
 		}
 	}
@@ -179,6 +207,12 @@
 		padding: 0;
 		position: relative;
 		z-index: 4;
+
+		@media (max-width: 767px) {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
 		li {
 			margin-bottom: 30px;
 			display: flex;
@@ -187,6 +221,9 @@
 			cursor: pointer;
 			@media (max-width: 1199px) {
 				margin-bottom: 20px;
+			}
+			@media (max-width: 767px) {
+				margin-bottom: 0;
 			}
 			&.active,
 			&:hover {
@@ -222,6 +259,11 @@
 					height: 100%;
 					object-fit: cover;
 				}
+
+				@media (max-width: 767px) {
+					width: 50px;
+					height: 50px;
+				}
 			}
 			.info {
 				background: linear-gradient(
@@ -244,6 +286,14 @@
 					background: #212363;
 					border-radius: 20.855px;
 					transition: all ease-in-out 0.3s;
+				}
+
+				@media (max-width: 767px) {
+					padding: 0px 20px;
+
+					.name {
+						margin-bottom: 3px;
+					}
 				}
 			}
 			.name {
