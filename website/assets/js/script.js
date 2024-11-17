@@ -119,8 +119,6 @@ $(document).ready(function () {
 		$('#verse-bg').attr('src', `assets/images/metafi_verse${actorId}.png`);
 	});
 
-	
-
 	$('.mf-banner-slide').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -181,7 +179,18 @@ $(document).ready(function () {
 					centerPadding: '10px',
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					centerMode: true
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					centerPadding: '10px',
+					slidesToShow: 1,
+					slidesToScroll: 1,
 					centerMode: true,
+					dots: false,
+					arrows: true
 				}
 			}
 		]

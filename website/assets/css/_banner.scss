@@ -15,11 +15,13 @@
 			height: 100vh;
 			padding-top: 15.8vh;
 		}
-		@media(max-width:991px){
+		@media (max-width: 991px) {
 			min-height: 550px;
 		}
-		@media (max-width: 475px) {
-			max-height: 750px;
+		@media (max-width: 576px) {
+			max-height: 650px;
+			height: 650px;
+			padding-top: 90px;
 		}
 		h1 {
 			font-weight: 700;
@@ -40,8 +42,12 @@
 				font-size: 50px;
 				line-height: 1.15;
 			}
-			@media(max-width:991px){
+			@media (max-width: 991px) {
 				font-size: 45px;
+			}
+			@media (max-width: 576px) {
+				font-size: 38px;
+				margin-bottom: 10px;
 			}
 		}
 		p {
@@ -55,6 +61,10 @@
 			margin-bottom: -38px;
 			position: relative;
 			z-index: 2;
+			@media (max-width: 575px) {
+				white-space: nowrap;
+				font-size: 15px;
+			}
 		}
 		> img {
 			max-width: 100%;
@@ -72,6 +82,10 @@
 				bottom: 20.3vh;
 				width: 100%;
 				height: auto;
+			}
+			@media (max-width: 576px) {
+				bottom: 20px;
+				width: 110%;
 			}
 		}
 		.play {
@@ -99,8 +113,11 @@
 			@media (max-height: 1080px) {
 				bottom: 22vh;
 			}
-			@media (max-width: 475px) {
-				bottom: 36vh;
+			@media (max-width: 575px) {
+				width: 60px;
+				height: 60px;
+				bottom: auto;
+				top: 230px;
 			}
 			img {
 				width: 100%;
@@ -124,13 +141,15 @@
 			@media (max-height: 1080px) {
 				bottom: 10vh;
 			}
-			@media (max-width: 475px) {
+			@media (max-width: 575px) {
+				bottom: auto;
+				top: 310px;
 				gap: 10px;
+				row-gap: 20px;
 				flex-wrap: wrap;
 				width: 100%;
 				.btn.btn-lg {
 					width: calc(50% - 5px);
-
 					&:last-child {
 						width: 100%;
 					}
@@ -152,6 +171,10 @@
 		@media (max-height: 1080px) {
 			bottom: 6vh;
 		}
+		@media (max-width: 576px) {
+			bottom: 20px;
+			gap: 4px;
+		}
 		li,
 		li button {
 			width: 61.31px;
@@ -162,6 +185,12 @@
 				width: 40px;
 				height: 10px;
 				border-radius: 10px;
+			}
+			@media (max-width: 576px) {
+				width: 30px;
+				height: 8px;
+				border-radius: 5px;
+				padding: 0;
 			}
 			&::before {
 				display: none;

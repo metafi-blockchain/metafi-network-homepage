@@ -5,12 +5,20 @@
 	@media (max-width: 991px) {
 		padding: 40px 0 80px;
 	}
+	@media (max-width: 575px) {
+		padding: 40px 0;
+	}
 	.mf-title {
 		line-height: 88px;
 		margin-bottom: 48px;
 		text-align: center;
 		@media (max-width: 991px) {
 			margin-bottom: 24px;
+		}
+		@media (max-width: 575px) {
+			white-space: nowrap;
+			margin-bottom: 10px;
+			line-height: 1.5;
 		}
 	}
 	.buttons {

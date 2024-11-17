@@ -6,6 +6,11 @@
 	@media (max-width: 1199px) {
 		margin-bottom: -200px;
 	}
+	@media (max-width: 575px) {
+		background-image: none;
+		margin: 0;
+		padding: 40px 0;
+	}
 	&-inner {
 		padding: 231px 77px 205px;
 		@media (max-width: 1919px) {
@@ -13,6 +18,9 @@
 		}
 		@media (max-width: 991px) {
 			padding: 6% 0 4%;
+		}
+		@media (max-width: 575px) {
+			padding: 0;
 		}
 		.mf-title {
 			line-height: 96px;

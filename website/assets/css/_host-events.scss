@@ -8,6 +8,9 @@
 	@media (max-width: 991px) {
 		padding: 80px 0 40px;
 	}
+	@media (max-width: 575px) {
+		padding: 40px 0;
+	}
 	&-header {
 		min-height: 172px;
 		margin-bottom: 220px;
@@ -65,6 +68,9 @@
 				@media (max-width: 1199px) {
 					font-size: 18px;
 					line-height: 1.5;
+				}
+				@media (max-width: 575px) {
+					font-size: 20px;
 				}
 			}
 			div {
