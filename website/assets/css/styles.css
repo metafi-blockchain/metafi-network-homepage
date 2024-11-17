@@ -746,7 +746,7 @@ a {
 }
 @media (max-width: 575px) {
   .mf-oawbmp .mf-title {
-    line-height: 1.5;
+    line-height: 1.3;
     margin-bottom: 20px;
   }
 }
@@ -918,7 +918,7 @@ a {
 }
 @media (max-width: 575px) {
   .mf-oawmeig .mf-title {
-    line-height: 1.5;
+    line-height: 1.3;
     margin-bottom: 20px;
   }
 }
@@ -1045,7 +1045,7 @@ a {
 }
 @media (max-width: 575px) {
   .mf-oawmeig-item p {
-    line-height: 1.5;
+    line-height: 1.3;
     font-size: 20px;
     margin-bottom: 10px;
   }
@@ -1188,7 +1188,7 @@ a {
 @media (max-width: 575px) {
   .mf-awaptfyv .mf-title {
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 1.3;
   }
 }
 .mf-awaptfyv-tabs {
@@ -1323,7 +1323,7 @@ a {
 @media (max-width: 575px) {
   .mf-awaptfyv-body h4 {
     font-size: 24px;
-    line-height: 1.5;
+    line-height: 1.3;
   }
 }
 .mf-awaptfyv-buttons {
@@ -1530,6 +1530,11 @@ a {
     background-image: none;
   }
 }
+@media (max-width: 575px) {
+  .mf-byow3m-subtitle {
+    margin-bottom: 5px;
+  }
+}
 .mf-byow3m-header {
   display: flex;
   gap: 40px;
@@ -1546,6 +1551,11 @@ a {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 575px) {
+  .mf-byow3m-header-subtitle {
+    margin-bottom: 15px;
+  }
+}
 .mf-byow3m-header h3 {
   line-height: 60px;
   text-transform: uppercase;
@@ -1554,6 +1564,11 @@ a {
 @media (max-width: 1199px) {
   .mf-byow3m-header h3 {
     line-height: 1.15;
+  }
+}
+@media (max-width: 575px) {
+  .mf-byow3m-header h3 {
+    line-height: 1.3;
   }
 }
 .mf-byow3m-header button {
@@ -1650,7 +1665,7 @@ a {
 }
 @media (max-width: 575px) {
   .mf-verse .mf-title {
-    line-height: 1.5;
+    line-height: 1.3;
   }
 }
 .mf-verse-inner {
@@ -2123,9 +2138,8 @@ a {
 }
 @media (max-width: 575px) {
   .mf-mcp .mf-title {
-    white-space: nowrap;
-    margin-bottom: 10px;
-    line-height: 1.5;
+    margin-bottom: 20px;
+    line-height: 1.3;
   }
 }
 .mf-mcp .buttons {
@@ -2285,7 +2299,8 @@ a {
 @media (max-width: 767px) {
   .mf-bac-inner .mf-title {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.3;
+    margin-bottom: 20px;
   }
 }
 .mf-bac-item {
@@ -2395,7 +2410,8 @@ a {
 @media (max-width: 767px) {
   .mf-tclg .mf-title {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.3;
+    margin-bottom: 20px;
   }
 }
 .mf-tclg p {
