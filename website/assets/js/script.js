@@ -5,6 +5,11 @@ const tooltipList = [...tooltipTriggerList].map(
 	tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
 );
 $(document).ready(function () {
+	AOS.init({
+		duration: 1000,
+		offset: 100,
+		once: true
+	});
 	$(window).scroll(function () {
 		var wScroll = $(this).scrollTop();
 		if (wScroll >= 80) {

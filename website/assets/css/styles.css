@@ -23,11 +23,10 @@ body::after {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100vw - 200px);
+  width: calc(100vw - 198px);
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   z-index: -1;
   transform: translateX(-100%);
   transition: all ease-in-out 0.3s;
@@ -236,8 +235,7 @@ a {
 .mf-header.sticky {
   padding: 15px 0;
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 .mf-header-inner {
   display: flex;
@@ -462,8 +460,7 @@ a {
 .mf-banner-item > img {
   max-width: 100%;
   max-height: 75%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -1031,8 +1028,7 @@ a {
 .mf-oawmeig-item span img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .mf-oawmeig-item p {
   font-weight: 700;
@@ -1477,8 +1473,7 @@ a {
 .mf-eadi-item-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .mf-eadi-item-image button {
   display: flex;
@@ -1650,8 +1645,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .mf-verse .mf-title {
   line-height: 54px;
@@ -1760,8 +1754,7 @@ a {
 .mf-verse-inner .mf-verse-slide-nav img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .mf-verse-inner .mf-verse-slide {
   position: relative;
@@ -1795,8 +1788,7 @@ a {
 .mf-verse-inner .mf-verse-slide-item .play img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 475px) {
   .mf-verse-inner .mf-verse-slide-item .play {
@@ -1947,8 +1939,7 @@ a {
 .mf-verse-tabs li .image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 767px) {
   .mf-verse-tabs li .image {
@@ -2076,8 +2067,7 @@ a {
 .mf-host-events-item-image img {
   max-width: 100%;
   max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .mf-host-events-item-info h4 {
   font-weight: 700;
@@ -2201,8 +2191,7 @@ a {
 .mf-mcp-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform-origin: center;
   transition: all ease-in-out 0.3s;
 }
@@ -2432,8 +2421,7 @@ a {
 .mf-tclg-items {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 14px;
-       column-gap: 14px;
+  column-gap: 14px;
   row-gap: 31px;
 }
 @media (max-width: 1399px) {
@@ -2712,4 +2700,6 @@ a {
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     --bs-gutter-x: 36px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
