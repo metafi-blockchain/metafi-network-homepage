@@ -1773,6 +1773,11 @@ a {
   overflow: hidden;
   position: relative;
 }
+.mf-verse-inner .mf-verse-slide-item iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .mf-verse-inner .mf-verse-slide-item .play {
   position: absolute;
   top: 50%;
