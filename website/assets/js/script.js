@@ -73,8 +73,8 @@ $(document).ready(function () {
     </div>
   `;
 	// Initialize verse slides with first actor
-	$('.mf-verse-slide').html(getActorSlide(1));
-	$('.mf-verse-slide-nav').html(getActorNav(1));
+	$('.mf-verse-slide').html(getActorSlide(2));
+	$('.mf-verse-slide-nav').html(getActorNav(2));
 
 	// Video URL mapping
 	const videoUrls = {

@@ -2,7 +2,7 @@
 	background-image: url(../images/become_a_creatoor.png);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	margin-bottom: -273px;
+	margin-bottom: -380px;
 	@media (max-width: 1199px) {
 		margin-bottom: -200px;
 	}
@@ -25,6 +25,7 @@
 		.mf-title {
 			line-height: 96px;
 			margin-bottom: 12px;
+			text-transform: uppercase;
 			@media (max-width: 767px) {
 				font-size: 24px;
 				line-height: 1.3;
