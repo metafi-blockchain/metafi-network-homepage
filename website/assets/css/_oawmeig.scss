@@ -123,6 +123,14 @@
 				margin-bottom: 10px;
 			}
 		}
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border: 4.04px solid #a2bdff;
+			overflow: hidden;
+			border-radius: 18.48px;
+		}
 	}
 	.slick-arrow {
 		width: 36px;

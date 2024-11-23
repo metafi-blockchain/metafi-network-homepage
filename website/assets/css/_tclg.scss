@@ -4,6 +4,8 @@
 	// background-image: url(../images/trusted_community_led_governance-bg.png);
 	// background-size: cover;
 	background: linear-gradient(180deg, #070D11 5%, #020947 100%);
+	width: 100%;
+	overflow: hidden;
 
 	@media (max-width: 1199px) {
 		padding-top: calc(200px + 92px);
