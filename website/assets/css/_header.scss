@@ -15,10 +15,14 @@
 	&-inner {
 		display: flex;
 		align-items: center;
-		gap: 50px;
+		gap: 40px;
 		justify-content: space-between;
 		@media (max-width: 1399px) {
 			justify-content: flex-start;
+		}
+
+		@media (max-width: 991px) {
+			justify-content: space-between;
 		}
 	}
 	&-logo {
@@ -31,14 +35,18 @@
 	&-menu {
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: space-between;
 		flex: 1;
-		gap: 30px;
+		gap: 40px;
 		@media (max-width: 1399px) {
 			gap: 24px;
 		}
 		@media (max-width: 1199px) {
 			gap: 15px;
+		}
+
+		@media (max-width: 475px) {
+			flex-direction: row-reverse;
 		}
 		.toggle-menu {
 			min-width: 50px;

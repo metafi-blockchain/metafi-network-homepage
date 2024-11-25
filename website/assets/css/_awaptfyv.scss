@@ -146,4 +146,11 @@
 			margin-top: 0;
 		}
 	}
+
+	.row .mf-title {
+		display: none;
+		@media (max-width: 475px) {
+			display: block;
+		}
+	}
 }

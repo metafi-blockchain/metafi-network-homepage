@@ -4,6 +4,7 @@
 	background-size: cover;
 	// padding-top: 171px;
 	text-align: center;
+	position: relative;
 	&-slide {
 		margin-bottom: 0 !important;
 		z-index: 1;
@@ -160,15 +161,17 @@
 				gap: 10px;
 				row-gap: 20px;
 				flex-wrap: wrap;
-				width: 100%;
+				width: calc(100% - 10px);
 				bottom: unset;
 				top: unset;
 				left: unset;
 				transform: unset;
 				.btn.btn-lg {
-					width: calc(50% - 5px);
-					&:last-child {
-						width: 100%;
+					width: calc(100.29 / 320 * 100vw);
+					span {
+						font-size: 14px;
+						font-weight: 700;
+						line-height: normal;
 					}
 				}
 			}
@@ -227,23 +230,24 @@
 			bottom: 50px;
 			left: 50%;
 			transform: translateX(-50%);
-
-			.buttons > a {
-				width: 100% !important;
-			}
+			width: 100vw;
 		}
 	}
 
 	.mf-banner-item-shadow {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		z-index: 0;
-		img {
+		display: none;
+		@media (max-width: 475px) {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
 			width: 100%;
-			height: 100%;
-			object-fit: contain;
+			z-index: 0;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
 		}
 	}
 }

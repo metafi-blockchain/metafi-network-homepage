@@ -2,6 +2,11 @@
 	padding-top: 63px;
 	position: relative;
 	overflow: hidden;
+
+	@media (min-width: 1440px) {
+		height: 100vh;
+	}
+
 	@media (max-width: 575px) {
 		padding-top: 40px;
 	}
@@ -90,7 +95,7 @@
 				width: 100%;
 			}
 			@media (max-width: 575px) {
-				bottom: 40px;
+				margin-top: 0px;
 			}
 			@media (max-width: 575px) {
 				gap: 15px;
@@ -144,6 +149,10 @@
 			max-width: 44.42vw;
 			width: 44.42vw;
 
+			@media (max-width: 1200px) {
+				padding: 20px;
+			}
+
 			@media (max-width: 991px) {
 				flex-direction: column;
 				max-width: calc(348 / 402 * 100vw);
@@ -188,13 +197,17 @@
 						object-fit: cover;
 					}
 
-					@media (max-width: 475px) {
+					@media (max-width: 991px) {
 						width: 80px;
 						height: 80px;
 					}
 				}
 
-				@media (max-width: 1199px) {
+				@media (max-width: 991px) {
+					height: 400px;
+				}
+
+				@media (max-width: 475px) {
 					height: 300px;
 				}
 			}
@@ -220,16 +233,7 @@
 				border-radius: 30.8191px;
 				overflow: hidden;
 				position: relative;
-				@media (max-width: 1399px) {
-					height: 120px;
-				}
-				@media (max-width: 1199px) {
-					height: 100px;
-				}
-				@media (max-width: 575px) {
-					height: 70px;
-					border-radius: 15px;
-				}
+
 				&.active,
 				&.slick-current {
 					&::after {
@@ -250,6 +254,16 @@
 					);
 					opacity: 1;
 					transition: all ease-in-out 0.3s;
+				}
+
+				@media (max-width: 991px) {
+					height: 100px;
+					border-radius: 15px;
+				}
+
+				@media (max-width: 575px) {
+					height: 70px;
+					border-radius: 15px;
 				}
 			}
 			.slick-arrow {
@@ -291,7 +305,7 @@
 				overflow-y: unset;
 			}
 			@media (max-width: 475px) {
-				padding: 0 20px;
+				padding: 0 25px;
 			}
 		}
 
@@ -372,7 +386,7 @@
 
 					@media (max-width: 991px) {
 						border-radius: 10.16px;
-						border: 2.54px solid #B7FFF7
+						border: 2.54px solid #b7fff7;
 					}
 				}
 				.info {
@@ -400,6 +414,7 @@
 					}
 
 					@media (max-width: 991px) {
+						margin-left: -2px;
 						.name {
 							font-family: Poppins;
 							font-size: 12.2px;
@@ -448,6 +463,11 @@
 					object-fit: cover;
 				}
 
+				@media (max-width: 991px) {
+					width: 60px;
+					height: 60px;
+				  }
+
 				@media (max-width: 767px) {
 					width: 51.16px;
 					height: 51.16px;
@@ -478,6 +498,10 @@
 					background: #212363;
 					border-radius: 20.855px;
 					transition: all ease-in-out 0.3s;
+				}
+
+				@media (max-width: 991px) {
+					margin-left: -2px;
 				}
 
 				@media (max-width: 767px) {

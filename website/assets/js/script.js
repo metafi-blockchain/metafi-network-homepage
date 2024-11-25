@@ -91,6 +91,17 @@ $(document).ready(function () {
 	$('.mf-verse-slide').html(getActorSlide(2));
 	$('.mf-verse-slide-nav').html(getActorNav(2));
 
+	const gameDescription = {
+		2: "Infinity War is an innovative strategy game featuring merge to upgrade gameplay, no more long upgrade waiting times, just merge two together and the upgrade will finish instantly! Recruit Legendary Heroes to lead the stationed Land, Navy and Airforce troops to victory!",
+		1: "Set against the backdrop of a mythical life-and-death battle, Holy Chaos guides players on an adventure through perilous lands. The goal is to collect all seven Holy Grails to seal away the dark forces, restoring the world to its original state.",
+		3: "Infinity War is an innovative strategy game featuring merge to upgrade gameplay, no more long upgrade waiting times, just merge two together and the upgrade will finish instantly! Recruit Legendary Heroes to lead the stationed Land, Navy and Airforce troops to victory!",
+		4: "MyMasterWar is a DeFi x NFT gaming ecosystem with the difference that blockchain technology is applied to the game, along with Free Play to Earn and Staking model. Unlike many other NFT Games, MyMasterWar does not require players to spend any money to start playing, which revolves around the plot:",
+		5: "Realms Of Galaxy is an action packed MMO strategy game lets you build and upgrade your base, take your army onto the global battlefield to wreak havoc on other players. Strategic control of the battlefield is achieved through the careful development of units and special abilities, smokescreens, bombing runs and more. Become Ruler of the World by establishing and leading a civilization, discover new technologies, go head-to-head with some of history’s greatest leaders and build the most powerful empire the world has ever known.",
+		6: "Set against the backdrop of a mythical life-and-death battle, Holy Chaos guides players on an adventure through perilous lands. The goal is to collect all seven Holy Grails to seal away the dark forces, restoring the world to its original state.",
+		7: "Fly into space on epic spaceships and experience intense, fiery battles."
+	}
+
+
 	// Video URL mapping
 	const videoUrls = {
 		1: 'https://www.youtube.com/embed/0T34-WHJ8d0?si=757-gN07rc2ziHZk&autoplay=1&enablejsapi=1',
@@ -124,8 +135,42 @@ $(document).ready(function () {
 		$(`#PlayVideo-slide-${i}`).on('click', handleVideoPlay);
 	}
 
+	$('.mf-verse-tabs').slick({
+		slidesToShow: 4.5,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: false,
+		infinite: false,
+		cloneSlide: false,
+		draggable: false,
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3.5,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 475,
+				settings: {
+					slidesToShow: 2.3,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
 	// Handle verse tab clicks
 	$('.mf-verse-tabs li').on('click', function (e) {
+		// Get index of clicked item
+		const index = $(this).index();
+		// Slide to that index to center it
+		if(screenWidth < 992) {
+			$('.mf-verse-tabs').slick('slickGoTo', index, true);
+		}
+
+		$('.mf-verse-body .description div').html(gameDescription[index]);
 		e.preventDefault();
 
 		const actorItem = $(e.target).closest('li').length
@@ -304,24 +349,7 @@ $(document).ready(function () {
 		});
 	});
 
-	$('.mf-verse-tabs').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		dots: false,
-		arrows: false,
-		infinite: false,
-		cloneSlide: false,
-		draggable: false,
-		responsive: [
-			{
-				breakpoint: 475,
-				settings: {
-					slidesToShow: 2.3,
-					slidesToScroll: 1
-				}
-			}
-		]
-	});
+	
 
 	const setMenuMb = () => {
 		if (window.innerWidth > 1199) {

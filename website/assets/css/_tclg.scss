@@ -1,5 +1,5 @@
 .mf-tclg {
-	padding-top: calc(380px + 92px);
+	padding-top: 92px;
 	padding-bottom: 55px;
 	// background-image: url(../images/trusted_community_led_governance-bg.png);
 	// background-size: cover;
@@ -7,9 +7,6 @@
 	width: 100%;
 	overflow: hidden;
 
-	@media (max-width: 1199px) {
-		padding-top: calc(200px + 92px);
-	}
 	@media (max-width: 575px) {
 		padding-top: 40px;
 	}

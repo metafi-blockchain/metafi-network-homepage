@@ -1,24 +1,30 @@
 .mf-bac {
-	background-image: url(../images/become_a_creatoor.png);
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	margin-bottom: -380px;
-	overflow: hidden;
+	position: relative;
+	background:  #070d11;
 	width: 100%;
-	@media (max-width: 1199px) {
-		margin-bottom: -200px;
+	margin-bottom: -2px;
+
+	&-bg {
+		height: auto;
+		width: 100%;
 	}
+
 	@media (max-width: 575px) {
 		background-image: none;
 		margin: 0;
 		padding: 40px 0;
 	}
 	&-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
 		padding: 231px 77px 205px;
 		@media (max-width: 1919px) {
 			padding: 10% 0 10%;
 		}
 		@media (max-width: 991px) {
+			position: relative;
 			padding: 6% 0 4%;
 		}
 		@media (max-width: 575px) {
@@ -54,7 +60,7 @@
 			position: relative;
 			z-index: 2;
 			display: flex;
-			justify-content: center;	
+			justify-content: center;
 			img {
 				width: 73.55%;
 			}
