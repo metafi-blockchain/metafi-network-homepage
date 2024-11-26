@@ -1,0 +1,215 @@
+.mf-host-events {
+	position: relative;
+	@media (max-width: 767px) {
+		background-image: url(../images/host-events-mb.png);
+		background-size: contain;
+		background-position: bottom center;
+		padding-top: 228px;
+		padding-bottom: 15px;
+		overflow: hidden;
+		background-color: #361678;
+		background-repeat: no-repeat;
+		@media (max-width: 475px) {
+			background-size: cover;
+			background-position: top center;
+		}
+	}
+	&-bg {
+		@media (max-width: 991px) {
+			min-height: 1000px;
+		}
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	&-inner {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 5.46vh;
+		@media (max-width: 991px) {
+			bottom: 20px;
+		}
+		@media (max-width: 767px) {
+			position: relative;
+			bottom: auto;
+		}
+	}
+	&-header {
+		position: relative;
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 14.25vh;
+		@media (min-height: 1080px) {
+			margin-bottom: 154px;
+		}
+		@media (max-width: 1199px) {
+			margin-bottom: 20px;
+			display: flex;
+		}
+		@media (max-width: 767px) {
+			margin-bottom: 18px;
+		}
+		.play {
+			margin: 20px auto 17px;
+			cursor: pointer;
+			z-index: 3;
+			width: 12.42vh;
+			height: 12.42vh;
+			min-width: 60px;
+			min-height: 60px;
+			padding: 0;
+			background-color: transparent;
+			border: 0;
+			outline: 0;
+			@media (min-height: 1080px) {
+				width: 135px;
+				height: 135px;
+				bottom: 333px;
+			}
+			@media (max-width: 1199px) {
+				position: absolute;
+				bottom: auto;
+				right: 0px;
+			}
+			@media (max-width: 991px) {
+				position: relative;
+				width: 68px;
+				height: 68px;
+			}
+			@media (max-width: 767px) {
+				margin-top: 0;
+				margin-bottom: 10px;
+			}
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				transform-origin: center;
+				transition: all ease-in-out 0.3s;
+			}
+		}
+		.box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 10px 0px 0px;
+			gap: 8px;
+			background: #ffffff;
+			border: 1px solid #000000;
+			border-radius: 10px;
+			text-align: center;
+			@media (max-width: 767px) {
+				gap: 4px;
+				border-radius: 5px;
+			}
+			h3 {
+				font-weight: 700;
+				font-size: 64px;
+				line-height: 96px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #1f2b32;
+				margin-bottom: 0;
+				@media (min-height: 720px) {
+					font-size: 3.33vw;
+					line-height: 8.88vh;
+				}
+				@media (min-height: 1080px) {
+					font-size: 64px;
+					line-height: 96px;
+				}
+				@media (max-width: 1199px) {
+					font-size: 60px;
+					line-height: 1.1 !important;
+				}
+				@media (max-width: 767px) {
+					font-size: 20px;
+					line-height: 1.5;
+				}
+			}
+			p {
+				border-top: 1px solid #000;
+				border-radius: 0px 0px 10px 10px;
+				text-align: center;
+				color: #1f2b32;
+				margin: 0;
+				padding: 10px;
+				@media (max-width: 767px) {
+					font-size: 9px;
+					padding: 4px;
+				}
+			}
+		}
+	}
+	.row {
+		@media (max-width: 767px) {
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			margin-right: -50px;
+			--bs-gutter-x: 0;
+			gap: 16px;
+			.col-md-6 {
+				padding: 0;
+				width: 134px;
+			}
+		}
+	}
+	&-item {
+		padding: 9px 9px 18px;
+		background: rgba(15, 23, 33, 0.6);
+		border-radius: 20px;
+		height: 100%;
+		text-align: center;
+		@media (max-width: 767px) {
+			padding: 3px 4px 12px;
+		}
+		.image {
+			height: 16.85vh;
+			margin-bottom: -2px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@media (min-height: 1080px) {
+				height: 182px;
+			}
+			@media (max-width: 767px) {
+				height: 70px;
+				margin-bottom: 2px;
+			}
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+			}
+		}
+		.info {
+			line-height: 20px;
+			padding: 10px 0;
+			.title {
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 30px;
+				color: #ffffff;
+				@media (max-width: 767px) {
+					font-size: 10px;
+					line-height: 12px;
+					margin-bottom: 4px;
+				}
+			}
+			p {
+				margin-bottom: 0;
+				@media (max-width: 767px) {
+					font-size: 9px;
+					line-height: 10px;
+				}
+			}
+		}
+	}
+}

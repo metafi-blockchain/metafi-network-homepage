@@ -1,0 +1,119 @@
+.mf-tclg {
+	padding-top: 119px;
+	padding-bottom: 99px;
+	background: linear-gradient(180deg, #050b1f 0%, #020947 100%);
+	width: 100%;
+	overflow: hidden;
+	@media (max-width: 767px) {
+		padding-bottom: 34px;
+		padding-top: 0;
+		.row {
+			--bs-gutter-y: 14px !important;
+		}
+	}
+	.image {
+		height: 100%;
+		width: 100%;
+		border-radius: 20px;
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.mf-title {
+		font-weight: 700;
+		font-size: 39.9273px;
+		line-height: 50px;
+		text-transform: uppercase;
+		margin-bottom: 0px;
+		@media (max-width: 767px) {
+			font-size: 18px;
+			line-height: 24px;
+			height: 51px;
+			margin-bottom: 0;
+		}
+	}
+	p {
+		text-transform: capitalize;
+		color: #ffffff;
+		margin-bottom: 22px;
+		@media (max-width: 767px) {
+			font-size: 9px;
+			line-height: 10px;
+			margin-bottom: 20px;
+		}
+	}
+	a.btn {
+		display: inline-flex;
+		margin-bottom: 29px;
+
+		@media (max-width: 767px) {
+			min-width: 94px !important;
+			height: 30px !important;
+			min-height: 30px !important;
+			margin-bottom: 20px;
+			span {
+				font-size: 10px !important;
+			}
+			&::before,
+			&:after {
+				border-radius: 6px;
+			}
+			&::before {
+				top: 2px;
+				height: calc(100% + 2px);
+			}
+		}
+	}
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 24px;
+		row-gap: 24px;
+		@media (max-width: 1399px) {
+			gap: 16px;
+		}
+		.mf-tclg-item {
+			padding: 16.6364px 24.9545px;
+			gap: 8.32px;
+			border: 0.831818px solid rgba(255, 255, 255, 0.5);
+			border-radius: 20px;
+			width: calc(50% - 12px);
+			@media (max-width: 1399px) {
+				padding: 20px;
+			}
+			@media (max-width: 767px) {
+				width: 100%;
+				padding: 8.29475px 12.4421px;
+				gap: 4.15px;
+				border: 0.414738px solid rgba(255, 255, 255, 0.5);
+				border-radius: 9.97183px;
+			}
+			&-title {
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 1;
+				text-transform: capitalize;
+				color: #ffffff;
+				margin-bottom: 10px;
+				@media (max-width: 767px) {
+					font-size: 12px;
+					margin-bottom: 5px;
+				}
+			}
+			p {
+				text-transform: capitalize;
+				margin-bottom: 0;
+				@media (max-width: 1399px) {
+					font-size: 16px;
+				}
+				@media (max-width: 767px) {
+					font-size: 9px;
+					line-height: 10px;
+				}
+			}
+		}
+	}
+}
