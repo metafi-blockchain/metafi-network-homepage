@@ -1,2 +1,0 @@
-https://www.figma.com/design/Xbnxe2jUF6ZzV8rHNVAICv/MetaFi?node-id=4913-14137&node-type=frame&t=4Pm9xZxrQhDk6Q7N-0
-https://www.figma.com/design/IqUo3obwdj21a7q29akvc8/MetaFi-(Copy)?node-id=4913-14137&node-type=frame&t=0ePQajNDbxor7wRh-0
