@@ -25,7 +25,7 @@
 		display: block;
 		&.mf-full-screen{
 			@media (min-height: 1080px) {
-				max-height: 1080px !important;
+				max-height: 1000px !important;
 			}
 		}
 		@media (max-width: 767px) {

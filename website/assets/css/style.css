@@ -674,7 +674,7 @@ a {
 }
 @media (min-height: 1080px) {
   .mf-banner-bg.mf-full-screen {
-    max-height: 1080px !important;
+    max-height: 1000px !important;
   }
 }
 @media (max-width: 767px) {
