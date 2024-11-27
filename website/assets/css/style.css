@@ -672,6 +672,11 @@ a {
 .mf-banner-bg {
   display: block;
 }
+@media (min-height: 1080px) {
+  .mf-banner-bg.mf-full-screen {
+    max-height: 1080px !important;
+  }
+}
 @media (max-width: 767px) {
   .mf-banner-bg {
     display: none !important;
@@ -795,6 +800,11 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 1.56vw;
+}
+@media (min-height: 1080px) {
+  .mf-banner-buttons {
+    bottom: 121px;
+  }
 }
 @media (max-width: 991px) {
   .mf-banner-buttons {

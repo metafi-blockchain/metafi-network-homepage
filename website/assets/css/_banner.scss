@@ -23,6 +23,11 @@
 	}
 	&-bg {
 		display: block;
+		&.mf-full-screen{
+			@media (min-height: 1080px) {
+				max-height: 1080px !important;
+			}
+		}
 		@media (max-width: 767px) {
 			display: none !important;
 		}
@@ -124,6 +129,9 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 1.56vw;
+		@media (min-height: 1080px) {
+			bottom: 121px;
+		}
 		@media (max-width: 991px) {
 			bottom: 62px;
 		}
