@@ -653,7 +653,6 @@ a {
   font-size: 64px;
   line-height: 96px;
   text-align: center;
-  text-transform: uppercase;
   background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1021,6 +1020,7 @@ a {
   gap: 2.6vw;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 @media (min-height: 1080px) {
   .mf-mpe .slick-dots {
@@ -1075,7 +1075,8 @@ a {
   background-color: #1b2364;
   overflow: hidden;
   max-height: 1080px;
-  height: 930px;
+  height: 1080px;
+  min-height: 1080px;
 }
 @media (min-height: 1080px) {
   .mf-mpeig {
@@ -1085,7 +1086,8 @@ a {
 @media (max-width: 1199px) {
   .mf-mpeig {
     padding-top: 50px;
-    height: 900px;
+    min-height: 850px;
+    height: 850px;
   }
 }
 @media (max-width: 767px) {
@@ -1181,7 +1183,7 @@ a {
 }
 .mf-mpeig-item .info {
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   width: 1166px;
@@ -1276,6 +1278,7 @@ a {
 }
 .mf-mpeig-item video {
   position: relative;
+  z-index: 3;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -1317,8 +1320,9 @@ a {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  bottom: 30px;
 }
-@media (max-width: 1919px) {
+@media (max-width: 1199px) {
   .mf-mpeig .slick-dots {
     margin-top: 10px;
   }
@@ -1524,6 +1528,8 @@ a {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: bottom right;
+       object-position: bottom right;
   }
 }
 .mf-blbotmwgp-info {
@@ -2038,17 +2044,18 @@ a {
 }
 @media (max-width: 767px) {
   .mf-blbotmwgp-thumb .image {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
     border-width: 2.5px;
+    border-radius: 10px;
   }
 }
 .mf-blbotmwgp-thumb .image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .mf-blbotmwgp-thumb .info {
   flex: 1;
@@ -2073,7 +2080,7 @@ a {
 }
 @media (max-width: 767px) {
   .mf-blbotmwgp-thumb .info {
-    padding: 5px 10px;
+    padding: 4px 10px 4px 5px;
     width: calc(100% - 68px);
     border-radius: 0px 10px 10px 0px;
     border-width: 3px;
@@ -2099,8 +2106,9 @@ a {
 }
 @media (max-width: 767px) {
   .mf-blbotmwgp-thumb .name {
-    font-size: 13px !important;
+    font-size: 8.5px !important;
     line-height: 18px;
+    font-weight: 600;
   }
 }
 .mf-blbotmwgp-thumb .desc {
@@ -2110,7 +2118,7 @@ a {
 }
 @media (max-width: 767px) {
   .mf-blbotmwgp-thumb .desc {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 
