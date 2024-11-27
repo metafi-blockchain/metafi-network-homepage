@@ -155,7 +155,7 @@ $(document).ready(function () {
 			}
 		]
 	});
-	$('.mf-blbotmwgp-slide').slick('slickGoTo', 1);
+	$('.mf-blbotmwgp-slide').slick('slickGoTo', 2);
 
 	for (let index = 1; index <= 7; index++) {
 		const previewEl = `#video-preview-${index}`;
@@ -167,6 +167,7 @@ $(document).ready(function () {
 			dots: false,
 			fade: true
 		});
+		$(previewEl).slick('slickGoTo', 1);
 		// $(previewEl).slick('slickGoTo', 1);
 		$(previewEl).on(
 			'beforeChange',
@@ -174,23 +175,15 @@ $(document).ready(function () {
 				$(`${listEl} .item`).removeClass('active');
 				$(`${listEl} .item-${nextSlide}`).addClass('active');
 
-				// Scroll to active slide
-				if (nextSlide === 0) {
-					$(listEl).animate(
-						{
-							scrollTop: 0
-						},
-						300
-					);
-					return;
-				}
-				var targetOffset = $($(`${listEl} .item-${nextSlide - 1}`)).offset()
-					.top;
-				var parentOffset = $(listEl).offset().top;
+				var parentOffset = $(listEl).offset()?.top;
+				var targetOffset =
+					nextSlide < $(`${listEl} .item`).length
+						? $($(`${listEl} .item-${nextSlide}`)).offset()?.top
+						: 0;
 				var scrollToPosition = targetOffset - parentOffset;
 				$(listEl).animate(
 					{
-						scrollTop: scrollToPosition
+						scrollTop: nextSlide === 0 ? 0 : scrollToPosition
 					},
 					300
 				);
@@ -204,7 +197,7 @@ $(document).ready(function () {
 	$('.mf-header a.disabled').on('click', event => {
 		event.preventDefault();
 	});
-	$('.mf-blbotmwgp a').on('click', function (event) {
+	$('.mf-blbotmwgp a:first-child').on('click', function (event) {
 		event.preventDefault();
 		alert('Coming soon!');
 	});

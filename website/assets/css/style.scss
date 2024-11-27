@@ -14,6 +14,10 @@
 * {
 	scrollbar-width: thin;
 }
+section ::-webkit-scrollbar {
+	width: 2px !important;
+	height: 2px !important
+}
 body {
 	overflow-x: hidden;
 	position: relative;

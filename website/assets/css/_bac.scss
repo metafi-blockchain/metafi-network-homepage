@@ -8,7 +8,8 @@
 			padding: 10px 0;
 			width: calc(368px + (100vw - 368px) / 2);
 			padding-right: calc(100vw - 368px - 40px);
-			overflow: auto;
+			overflow-x: auto;
+			overflow-y: hidden;
 			.col-md-4 {
 				width: 143px;
 				padding: 0;
@@ -90,12 +91,17 @@
 	}
 	&-body {
 		background: linear-gradient(180deg, #070d11 5%, #050b1f 100%);
+		margin-top: -100px;
+		@media (max-width: 1199px) {
+			margin-top: -70px;
+		}
 		@media (max-width: 991px) {
 			padding-top: 25px;
 		}
 		@media (max-width: 767px) {
 			overflow: hidden;
 			padding-bottom: 76px;
+			margin-top:0;
 		}
 	}
 	&-item {

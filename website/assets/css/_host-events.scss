@@ -152,6 +152,7 @@
 		@media (max-width: 767px) {
 			flex-wrap: nowrap;
 			overflow-x: auto;
+			overflow-y: hidden;
 			margin-right: -50px;
 			--bs-gutter-x: 0;
 			gap: 16px;

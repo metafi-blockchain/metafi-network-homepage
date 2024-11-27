@@ -52,10 +52,12 @@
 			--bs-gutter-y: 0;
 			gap: 24px;
 			flex-wrap: nowrap;
-			overflow: auto;
 			width: calc(368px + (100vw - 368px) / 2);
 			padding: 10px 0;
 			padding-right: calc(100vw - 368px - 40px);
+			overflow-y: hidden;
+			overflow-x: auto;
+			scrollbar-width: 1px;
 			.col-md-6 {
 				width: 221px;
 				padding: 0;

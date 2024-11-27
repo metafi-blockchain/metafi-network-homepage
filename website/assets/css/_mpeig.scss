@@ -1,10 +1,10 @@
 .mf-mpeig {
-	padding-top: 13.42vh;
+	padding-top: 10vh;
 	background-color: #1b2364;
 	overflow: hidden;
-	max-height: 1080px;
-	height: 1080px;
-	min-height: 1080px;
+	max-height: 950px;
+	height: 950px;
+	min-height: 950px;
 	@media (min-height: 1080px) {
 		padding-top: 80px;
 	}
@@ -95,7 +95,7 @@
 		}
 		.info {
 			position: absolute;
-			bottom: 30px;
+			bottom: 25px;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 1166px;
