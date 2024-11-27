@@ -1,15 +1,16 @@
 .mf-header {
-	padding: 20px 0;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	padding: 20px 0;
 	z-index: 999;
-	transition: background ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
 	@media (max-width: 767px) {
 		padding: 25px 0 10px;
 	}
 	&.sticky {
+		position: fixed;
 		background-color: #000000;
 		padding-top: 10px;
 	}
@@ -58,9 +59,21 @@
 			display: block;
 			max-height: 100vh;
 			overflow: auto;
-			padding: 70px 0 10px;
+			padding: 101px 0 10px;
 			&.show {
 				transform: translateX(0);
+			}
+		}
+		.mf-header-logo {
+			display: none;
+			img {
+				height: 40px;
+			}
+			@media (max-width: 991px) {
+				display: inline-flex;
+				position: fixed;
+				top: 20px;
+				left: 20px;
 			}
 		}
 		> ul {
@@ -75,7 +88,9 @@
 			}
 			@media (max-width: 991px) {
 				flex-direction: column;
-				margin-bottom: 30px;
+				margin-bottom: 45px;
+				padding-left: 20px;
+				padding-right: 20px;
 			}
 			> li {
 				display: inline-flex;
@@ -84,6 +99,8 @@
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+					width: 100%;
+					justify-content: space-between;
 				}
 				a {
 					display: inline-flex;
@@ -97,8 +114,12 @@
 					}
 					@media (max-width: 991px) {
 						gap: 8px;
-						font-size: 18px;
-						font-weight: 500;
+						font-size: 16px;
+						line-height: 24px;
+						font-weight: 400;
+						width: 100%;
+						display: flex;
+						align-items: center;
 					}
 					&:hover {
 						color: #fff;
@@ -125,12 +146,14 @@
 					}
 				}
 			}
-			.dropdown:hover .dropdown-menu {
-				display: block;
-				margin-top: 26px !important;
-				position: absolute;
-				inset: 0px auto auto 0px;
-				transform: translate3d(0px, 26.4px, 0px);
+			@media (min-width: 992px) {
+				.dropdown:hover .dropdown-menu {
+					display: block;
+					margin-top: 26px !important;
+					position: absolute;
+					inset: 0px auto auto 0px;
+					transform: translate3d(0px, 26.4px, 0px);
+				}
 			}
 			.dropdown-toggle {
 				&.show {
@@ -144,6 +167,14 @@
 					border-top: 4px solid;
 					border-right: 4px solid transparent;
 					border-left: 4px solid transparent;
+					@media (max-width: 991px) {
+						border: 0;
+						width: 15px;
+						height: 7px;
+						background-image: url('data:image/svg+xml,<svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9201 1.4751L11.4001 7.9951C10.6301 8.7651 9.37008 8.7651 8.60008 7.9951L2.08008 1.4751" stroke="%23818183" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+						margin-left: auto;
+						background-size: cover;
+					}
 				}
 			}
 			.dropdown-menu {
@@ -154,14 +185,16 @@
 					font-size: 15px;
 				}
 				@media (max-width: 991px) {
+					width: 100%;
 					background-color: transparent;
 					transition: all ease-in-out 0.3s;
 					position: relative !important;
 					transform: none !important;
-					margin-top: 0 !important;
+					margin-top: 10px !important;
 					justify-content: center;
 					flex-direction: column;
-					align-items: center;
+					align-items: flex-start;
+					padding: 0 0 20px 30px;
 					&.show {
 						display: flex;
 					}
@@ -185,6 +218,9 @@
 	}
 	&-main-menu {
 		margin-top: 4px;
+		@media (max-width: 991px) {
+			gap: 25px !important;
+		}
 	}
 	&-cta {
 		display: inline-flex;
@@ -194,21 +230,44 @@
 			gap: 10px !important;
 		}
 		@media (max-width: 991px) {
-			gap: 30px !important;
+			flex-direction: row !important;
+			justify-content: center;
+			gap: 12px !important;
+			li{
+				display: inline-flex !important;
+				width: auto !important;
+			}
+			.btn {
+				min-width: 94px;
+				width: 94px;
+				min-height: 30px !important;
+				height: 30px !important;
+				&::before,
+				&::after {
+					border-radius: 6px;
+				}
+				&::before {
+					top: 2px;
+					height: calc(100% + 2px);
+				}
+				span {
+					font-size: 12px;
+				}
+			}
 		}
 	}
 	.close-menu {
 		display: none;
-		width: 50px;
-		min-width: 40px;
+		width: 24px;
+		min-width: 24px;
 		background-color: transparent;
 		border: 0;
 		cursor: pointer;
 		padding: 0;
 		margin-left: auto;
 		position: fixed;
-		top: 30px;
-		right: 30px;
+		top: 20px;
+		right: 20px;
 		img {
 			height: 24px;
 			position: relative;
@@ -238,15 +297,6 @@
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;
-		}
-	}
-	.btn {
-		@media (max-width: 991px) {
-			height: 50px;
-			min-width: 180px;
-			span {
-				font-size: 18px;
-			}
 		}
 	}
 }

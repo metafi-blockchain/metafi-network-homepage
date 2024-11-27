@@ -53,13 +53,18 @@
 			gap: 24px;
 			flex-wrap: nowrap;
 			overflow: auto;
-			width: calc(328px + (100vw - 328px) / 2);
+			width: calc(368px + (100vw - 368px) / 2);
 			padding: 10px 0;
-			padding-right: calc(100vw - 328px);
+			padding-right: calc(100vw - 368px - 40px);
 			.col-md-6 {
 				width: 221px;
 				padding: 0;
 			}
+		}
+		@media (max-width: 400px) {
+			width: calc(328px + (100vw - 328px) / 2);
+			padding: 10px 0;
+			padding-right: calc(100vw - 328px);
 		}
 	}
 	&-item {

@@ -6,13 +6,19 @@
 			margin: 0;
 			gap: 18px;
 			padding: 10px 0;
-			width: calc(328px + (100vw - 328px) / 2);
-			padding-right: calc(100vw - 328px);
+			width: calc(368px + (100vw - 368px) / 2);
+			padding-right: calc(100vw - 368px - 40px);
 			overflow: auto;
 			.col-md-4 {
 				width: 143px;
 				padding: 0;
 			}
+		}
+	}
+	@media (max-width: 400px) {
+		.row {
+			width: calc(328px + (100vw - 328px) / 2);
+			padding-right: calc(100vw - 328px);
 		}
 	}
 	&-header {

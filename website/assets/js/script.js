@@ -33,22 +33,40 @@ $(document).ready(function () {
 			$('body').removeClass('menu-show');
 		}
 	});
-
-	// Header
-	$(window).scroll(function () {
-		var wScroll = $(this).scrollTop();
-		if (wScroll >= 80) {
-			$('.mf-header').addClass('sticky');
+	let lastScrollTop = 0;
+	const header = document.getElementById('header');
+	window.addEventListener('scroll', function () {
+		let currentScroll =
+			window.pageYOffset || document.documentElement.scrollTop;
+		// Check if the user is scrolling up or down
+		if (currentScroll > lastScrollTop) {
+			// Scrolling down, remove sticky class
+			header.classList.remove('sticky');
 		} else {
-			$('.mf-header').removeClass('sticky');
+			// Scrolling up, add sticky class
+			header.classList.add('sticky');
 		}
-	});
 
-	if ($(window).scrollTop() >= 80) {
-		$('.mf-header').addClass('sticky');
-	} else {
-		$('.mf-header').removeClass('sticky');
-	}
+		if (currentScroll === 0) {
+			header.classList.remove('sticky');
+		}
+		lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+	});
+	// Header
+	// $(window).scroll(function () {
+	// 	var wScroll = $(this).scrollTop();
+	// 	if (wScroll >= 80) {
+	// 		$('.mf-header').addClass('sticky');
+	// 	} else {
+	// 		$('.mf-header').removeClass('sticky');
+	// 	}
+	// });
+
+	// if ($(window).scrollTop() >= 80) {
+	// 	$('.mf-header').addClass('sticky');
+	// } else {
+	// 	$('.mf-header').removeClass('sticky');
+	// }
 
 	// Banner
 	$('.mf-banner-slide').slick({
@@ -137,7 +155,7 @@ $(document).ready(function () {
 			}
 		]
 	});
-	$('.mf-blbotmwgp-slide').slick('slickGoTo', 2);
+	$('.mf-blbotmwgp-slide').slick('slickGoTo', 1);
 
 	for (let index = 1; index <= 7; index++) {
 		const previewEl = `#video-preview-${index}`;
@@ -186,13 +204,18 @@ $(document).ready(function () {
 	$('.mf-header a.disabled').on('click', event => {
 		event.preventDefault();
 	});
-	AOS.init({
-		duration: 800,
+	$('.mf-blbotmwgp a').on('click', function (event) {
+		event.preventDefault();
+		alert('Coming soon!');
 	});
 
-	setTimeout(()=>{
-		$('.mf-loading').hide()
-	},500)
+	AOS.init({
+		duration: 800
+	});
+
+	setTimeout(() => {
+		$('.mf-loading').hide();
+	}, 500);
 });
 
 function playVideo(url) {
@@ -204,7 +227,7 @@ function playVideo(url) {
 		$('#videoModal iframe').attr('src', '');
 	});
 }
-function showMaintenance(event){
+function showMaintenance(event) {
 	event.preventDefault();
-	alert('Website currently under maintenance')
+	alert('Website currently under maintenance');
 }
