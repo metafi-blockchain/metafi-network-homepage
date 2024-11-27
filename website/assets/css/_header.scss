@@ -125,6 +125,13 @@
 					}
 				}
 			}
+			.dropdown:hover .dropdown-menu {
+				display: block;
+				margin-top: 26px !important;
+				position: absolute;
+				inset: 0px auto auto 0px;
+				transform: translate3d(0px, 26.4px, 0px);
+			}
 			.dropdown-toggle {
 				&.show {
 					color: #fff;

@@ -139,7 +139,7 @@
 					width: 185px;
 					font-size: 9px;
 					line-height: 14px;
-					right: calc((100vw - 316px) / 2);
+					right: calc((100vw - 328px) / 2);
 					padding: 4px 8px;
 					margin-left: 0;
 				}
@@ -226,7 +226,7 @@
 					top: auto;
 					width: 183px;
 					left: auto;
-					right: calc((100vw - 316px) / 2);
+					right: calc((100vw - 328px) / 2);
 					transform: none;
 					padding: 5px;
 					margin-bottom: 0;
@@ -414,7 +414,7 @@
 					top: auto;
 					bottom: 37px;
 					gap: 16px;
-					right: calc((100vw - 316px) / 2);
+					right: calc((100vw - 328px) / 2);
 					left: auto;
 					transform: none;
 				}
@@ -580,7 +580,7 @@
 			text-transform: capitalize;
 			color: rgba($color: #bad8fb, $alpha: 0.5);
 			@media (max-width: 767px) {
-				font-size: 8px;
+				font-size: 9px;
 			}
 		}
 	}

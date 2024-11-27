@@ -186,7 +186,6 @@ $(document).ready(function () {
 	$('.mf-header a.disabled').on('click', event => {
 		event.preventDefault();
 	});
-
 	AOS.init({
 		duration: 800,
 	});
