@@ -1303,12 +1303,20 @@ a {
   max-height: 900px;
   height: 900px;
   min-height: 900px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media (max-width: 1499px) {
+@media (min-width: 1920px) {
   .mf-mpeig {
-    min-height: 800px;
-    height: 800px;
-    max-height: 800px;
+    background-color: transparent;
+  }
+}
+@media (max-width: 1819px) {
+  .mf-mpeig {
+    min-height: 850px;
+    height: 850px;
+    max-height: 850px;
   }
 }
 @media (max-width: 1199px) {
@@ -1363,7 +1371,7 @@ a {
   }
 }
 .mf-mpeig p {
-  width: 658px;
+  width: 90vw;
   margin: 0 auto 18px;
   text-align: center;
   display: -webkit-box;
@@ -1385,6 +1393,11 @@ a {
   margin-bottom: 0 !important;
   padding-top: 10px;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .mf-mpeig-slide {
+    overflow: initial;
+  }
 }
 .mf-mpeig-item {
   cursor: pointer;
@@ -1430,8 +1443,8 @@ a {
 }
 @media (max-width: 767px) {
   .mf-mpeig-item .info {
-    width: 90vw;
-    transform: translateX(-20vw) !important;
+    width: 80vw;
+    transform: translateX(-10vw) !important;
     max-width: unset;
     font-size: 12px;
     line-height: 16px;
@@ -1538,14 +1551,11 @@ a {
   right: 0px;
 }
 .mf-mpeig .slick-dots {
-  position: relative;
-  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  bottom: 30px;
-  margin-top: -70px;
+  bottom: 0px;
 }
 @media (max-width: 767px) {
   .mf-mpeig .slick-dots {
@@ -1554,6 +1564,7 @@ a {
     width: 80%;
     display: flex !important;
     gap: 10px;
+    bottom: -60px;
   }
   .mf-mpeig .slick-dots li {
     width: 32px !important;
@@ -1567,16 +1578,6 @@ a {
     padding: 0;
     border-width: 1.5px;
     font-size: 12px;
-  }
-}
-@media (max-width: 1199px) {
-  .mf-mpeig .slick-dots {
-    margin-top: -10px;
-  }
-}
-@media (max-width: 767px) {
-  .mf-mpeig .slick-dots {
-    margin-top: 55px;
   }
 }
 .mf-mpeig .slick-dots li {
