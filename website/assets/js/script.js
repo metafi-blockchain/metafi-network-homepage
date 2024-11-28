@@ -91,13 +91,14 @@ $(document).ready(function () {
 	// MPEIG
 	$('.mf-mpeig-slide').slick({
 		slidesToShow: 5,
-		slidesToScroll: 1,
+		slidesToScroll: 3,
 		centerMode: true,
 		centerPadding: '10px',
 		dots: true,
 		arrows: false,
 		infinite: true,
 		autoPlay: true,
+		swipe: false,
 		autoplaySpeed: 2000,
 		responsive: [
 			{
@@ -198,8 +199,10 @@ $(document).ready(function () {
 		event.preventDefault();
 	});
 	$('.mf-blbotmwgp a:first-child').on('click', function (event) {
-		event.preventDefault();
-		alert('Coming soon!');
+		if (event.currentTarget.href.includes('#')) {
+			event.preventDefault();
+			alert('Coming soon!');
+		}
 	});
 
 	AOS.init({

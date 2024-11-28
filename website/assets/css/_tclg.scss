@@ -40,8 +40,8 @@
 		color: #ffffff;
 		margin-bottom: 22px;
 		@media (max-width: 767px) {
-			font-size: 9px;
-			line-height: 10px;
+			font-size: 12px;
+			line-height: 16px;
 			margin-bottom: 20px;
 		}
 	}
@@ -55,7 +55,7 @@
 			min-height: 30px !important;
 			margin-bottom: 20px;
 			span {
-				font-size: 10px !important;
+				font-size: 12px !important;
 			}
 			&::before,
 			&:after {
@@ -99,7 +99,7 @@
 				color: #ffffff;
 				margin-bottom: 10px;
 				@media (max-width: 767px) {
-					font-size: 12px;
+					font-size: 14px;
 					margin-bottom: 5px;
 				}
 			}
@@ -110,8 +110,8 @@
 					font-size: 16px;
 				}
 				@media (max-width: 767px) {
-					font-size: 9px;
-					line-height: 10px;
+					font-size: 12px;
+					line-height: 16px;
 				}
 			}
 		}

@@ -6,8 +6,8 @@
 			margin: 0;
 			gap: 18px;
 			padding: 10px 0;
-			width: calc(368px + (100vw - 368px) / 2);
-			padding-right: calc(100vw - 368px - 40px);
+			width: calc(378px + (100vw - 378px) / 2);
+			padding-right: calc(100vw - 378px - 40px);
 			overflow-x: auto;
 			overflow-y: hidden;
 			.col-md-4 {
@@ -57,7 +57,7 @@
 				top: 120px !important;
 			}
 			@media (max-width: 767px) {
-				top: 221px !important;
+				top: 210px !important;
 			}
 			h3 {
 				font-weight: 700;
@@ -82,8 +82,8 @@
 					width: 600px;
 				}
 				@media (max-width: 767px) {
-					font-size: 10px;
-					line-height: 12px;
+					font-size: 12px;
+					line-height: 16px;
 					color: #bad8fb;
 				}
 			}
@@ -101,7 +101,7 @@
 		@media (max-width: 767px) {
 			overflow: hidden;
 			padding-bottom: 76px;
-			margin-top:0;
+			margin-top: 0;
 		}
 	}
 	&-item {
@@ -113,8 +113,8 @@
 		line-height: 20px;
 		@media (max-width: 767px) {
 			margin-bottom: 0;
-			font-size: 8px;
-			line-height: 10px;
+			font-size: 10px;
+			line-height: 12px;
 		}
 		.image {
 			height: 28.14vh;

@@ -42,7 +42,7 @@
 			margin-bottom: -24px;
 		}
 		@media (max-width: 767px) {
-			width: 287px;
+			width: 320px;
 		}
 	}
 	.box {
@@ -119,12 +119,13 @@
 						border-radius: 6px;
 					}
 					&:last-child {
-						min-width: 90px;
+						min-width: 110px;
 					}
 				}
 				@media (max-width: 767px) {
 					span {
-						font-size: 10px;
+						font-size: 12px;
+						font-weight: 500;
 					}
 				}
 				&::before {
@@ -151,7 +152,7 @@
 					span {
 						color: #fff !important;
 						@media (max-width: 991px) {
-							font-size: 10px;
+							font-size: 12px;
 						}
 					}
 				}
@@ -183,9 +184,8 @@
 				max-width: 100%;
 			}
 			@media (max-width: 991px) {
-				font-size: 9px;
+				font-size: 12px;
 				display: -webkit-box;
-				-webkit-line-clamp: 6;
 				-webkit-box-orient: vertical;
 				overflow: hidden;
 				text-overflow: ellipsis;
@@ -217,7 +217,7 @@
 					min-height: 28px;
 					height: 28px;
 					span {
-						font-size: 10px;
+						font-size: 12px;
 					}
 					@media (max-width: 767px) {
 						height: 30px !important;
