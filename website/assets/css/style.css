@@ -106,6 +106,7 @@ a {
   .container-xl,
   .container-xxl {
     width: 320px;
+    max-width: 100%;
   }
 }
 .btn {
@@ -1014,7 +1015,7 @@ a {
      object-position: bottom center;
 }
 .mf-banner.video-loaded .mf-banner-slide {
-  display: none;
+  display: none !important;
 }
 .mf-banner.video-loaded .mf-banner-inner {
   padding-top: 10%;
@@ -2381,10 +2382,12 @@ a {
 
 .mf-cta {
   position: relative;
+  background-image: url(../images/cta.png);
+  background-size: cover;
+  display: flex;
 }
 @media (max-width: 767px) {
   .mf-cta {
-    height: 531px;
     overflow: hidden;
   }
 }
@@ -2698,6 +2701,7 @@ a {
   background-size: cover;
   background-position: bottom left;
   position: relative;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .mf-byo {

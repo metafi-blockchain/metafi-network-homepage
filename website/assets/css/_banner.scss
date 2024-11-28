@@ -295,7 +295,7 @@
 	}
 	&.video-loaded {
 		.mf-banner-slide {
-			display: none;
+			display: none !important;
 		}
 		.mf-banner-inner {
 			padding-top: 10%;

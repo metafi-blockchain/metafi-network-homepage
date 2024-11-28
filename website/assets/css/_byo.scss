@@ -3,6 +3,7 @@
 	background-size: cover;
 	background-position: bottom left;
 	position: relative;
+	overflow: hidden;
 	@media (max-width: 991px) {
 		// height: 568px;
 		padding: 67px 0 86px;

@@ -1,7 +1,10 @@
 .mf-cta {
 	position: relative;
+	background-image: url(../images/cta.png);
+	background-size: cover;
+	display: flex;
 	@media (max-width: 767px) {
-		height: 531px;
+		// height: 531px;
 		overflow: hidden;
 	}
 	&-bg {
