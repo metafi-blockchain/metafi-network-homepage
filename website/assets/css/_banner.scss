@@ -3,6 +3,18 @@
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background-color: rgba($color: #000000, $alpha: 0.3);
+		transition: all ease-in-out 0.3s;
+		opacity: 0;
+	}
 	@media (max-width: 767px) {
 		background-image: url(../images/banner-bg-mb.png);
 		background-size: cover;
@@ -22,8 +34,9 @@
 		}
 	}
 	&-bg {
+		transition: all ease-in-out 0.3s;
 		display: block;
-		&.mf-full-screen{
+		&.mf-full-screen {
 			@media (min-height: 1080px) {
 				max-height: 1000px !important;
 			}
@@ -50,6 +63,7 @@
 		}
 	}
 	&-inner {
+		z-index: 2;
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -122,6 +136,7 @@
 		margin-right: auto;
 	}
 	&-buttons {
+		z-index: 2;
 		position: absolute;
 		bottom: 11.03vh;
 		left: 50%;
@@ -129,6 +144,7 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 1.56vw;
+		transition: all ease-in-out 0.3s;
 		@media (min-height: 1080px) {
 			bottom: 121px;
 		}
@@ -259,6 +275,103 @@
 		}
 		button {
 			width: 100% !important;
+		}
+	}
+	.mf-banner-video {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: all ease-in-out 0.3s;
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: bottom center;
+		}
+	}
+	&.video-loaded {
+		.mf-banner-slide {
+			display: none;
+		}
+		.mf-banner-inner {
+			padding-top: 10%;
+		}
+		.mf-banner-video {
+			position: relative;
+			height: 1000px;
+			display: flex;
+			align-items: center;
+		}
+		@media (min-width: 1600px) {
+			.mf-banner-video {
+				height: 1080px;
+			}
+		}
+		@media (max-width: 1599px) {
+			.mf-banner-video {
+				height: 850px;
+			}
+		}
+		@media (max-width: 1399px) {
+			.mf-banner-video {
+				height: 800px;
+			}
+		}
+		@media (max-width: 1199px) {
+			.mf-banner-video {
+				height: 750px;
+			}
+		}
+		@media (max-width: 767px) {
+			.mf-banner-slide {
+				display: none;
+			}
+			.mf-banner-video {
+				position: relative;
+				height: 450px;
+				display: flex;
+				align-items: center;
+			}
+			.mf-banner-buttons {
+				bottom: 40% !important;
+			}
+		}
+		@media (max-width: 576px) {
+			.mf-banner-inner {
+				padding-top: 28%;
+			}
+		}
+		@media (max-width: 400px) {
+			.mf-banner-video {
+				position: relative;
+				height: 400px;
+			}
+		}
+		&::after {
+			z-index: 1;
+			opacity: 1;
+		}
+		.mf-banner-play {
+			display: none !important;
+		}
+		.mf-banner-bg {
+			opacity: 0;
+		}
+		.mf-banner-video {
+			opacity: 1;
+			z-index: 1;
+		}
+		.mf-banner-inner {
+			h1 {
+				text-shadow: 1px 2px 3px rgba($color: #fff, $alpha: 0.3);
+			}
+		}
+		.mf-banner-buttons {
+			bottom: 40%;
 		}
 	}
 }

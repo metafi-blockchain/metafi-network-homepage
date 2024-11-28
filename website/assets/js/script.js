@@ -102,20 +102,13 @@ $(document).ready(function () {
 		autoplaySpeed: 2000,
 		responsive: [
 			{
-				breakpoint: 1400,
-				settings: {
-					centerPadding: '120px',
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
 				breakpoint: 767,
 				settings: {
 					centerPadding: '80px',
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					centerMode: true
+					centerMode: true,
+					swipe: true,
 				}
 			}
 		]
@@ -209,10 +202,16 @@ $(document).ready(function () {
 		duration: 800
 	});
 
-	setTimeout(() => {
-		$('.mf-loading').hide();
-	}, 500);
+	document
+		.getElementById('bannerVideo')
+		.addEventListener('loadeddata', function () {
+			$('.mf-banner').addClass('video-loaded');
+		});
 });
+
+setTimeout(() => {
+	$('.mf-loading').hide();
+}, 500);
 
 function playVideo(url) {
 	$('#videoModal iframe').attr('src', url);

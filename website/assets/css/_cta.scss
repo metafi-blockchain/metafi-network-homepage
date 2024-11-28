@@ -29,13 +29,11 @@
 		border: 0;
 		cursor: pointer;
 		outline: 0;
-		display: none;
 		@media (min-height: 1080px) {
 			width: 118px;
 			height: 118px;
 		}
 		@media (max-width: 991px) {
-			display: block;
 			width: 64px;
 			height: 64px;
 		}
