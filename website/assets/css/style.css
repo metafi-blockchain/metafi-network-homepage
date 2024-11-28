@@ -1177,20 +1177,27 @@ a {
   padding-top: 10vh;
   background-color: #1b2364;
   overflow: hidden;
-  max-height: 950px;
-  height: 950px;
-  min-height: 950px;
+  max-height: 1080px;
+  height: 1080px;
+  min-height: 1080px;
 }
 @media (min-height: 1080px) {
   .mf-mpeig {
     padding-top: 80px;
   }
 }
+@media (max-width: 1599px) {
+  .mf-mpeig {
+    max-height: 950px;
+    height: 950px;
+    min-height: 950px;
+  }
+}
 @media (max-width: 1199px) {
   .mf-mpeig {
     padding-top: 50px;
-    min-height: 850px;
-    height: 850px;
+    min-height: 900px;
+    height: 900px;
   }
 }
 @media (max-width: 767px) {
