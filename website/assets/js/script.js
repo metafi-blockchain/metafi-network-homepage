@@ -4,6 +4,10 @@ const tooltipTriggerList = document.querySelectorAll(
 const tooltipList = [...tooltipTriggerList].map(
 	tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
 );
+$('.mf-loading').hide();
+setTimeout(() => {
+	$('.mf-loading').hide();
+}, 300);
 $(document).ready(function () {
 	const setMenuMb = () => {
 		if (window.innerWidth > 1199) {
@@ -108,7 +112,7 @@ $(document).ready(function () {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: true,
-					swipe: true,
+					swipe: true
 				}
 			}
 		]
@@ -205,13 +209,13 @@ $(document).ready(function () {
 	document
 		.getElementById('bannerVideo')
 		.addEventListener('loadeddata', function () {
-			$('.mf-banner').addClass('video-loaded');
+			setTimeout(() => {
+				$('.mf-banner').addClass('video-loaded');
+				$('.mf-header').addClass('sticky');
+			}, 5000);
 		});
 });
 
-setTimeout(() => {
-	$('.mf-loading').hide();
-}, 500);
 
 function playVideo(url) {
 	$('#videoModal iframe').attr('src', url);

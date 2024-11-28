@@ -286,6 +286,9 @@
 		height: 100%;
 		opacity: 0;
 		transition: all ease-in-out 0.3s;
+		@media (max-height: 1080px) {
+			max-height: 100vh;
+		}
 		video {
 			width: 100%;
 			height: 100%;
@@ -371,7 +374,7 @@
 			}
 		}
 		.mf-banner-buttons {
-			bottom: 40%;
+			display: none !important;
 		}
 	}
 }

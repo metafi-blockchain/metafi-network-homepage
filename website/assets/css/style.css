@@ -65,7 +65,8 @@ a {
   height: 100vh;
   max-width: 100%;
   max-height: 1080px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-height: 720px;
 }
 @media (max-width: 1199px) {
@@ -375,7 +376,8 @@ a {
     width: 100vw;
     height: 100vh;
     background-color: rgba(3, 4, 7, 0.8);
-    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
     transform: translateX(100%);
     transition: all ease-in-out 0.3s;
     display: block;
@@ -823,7 +825,8 @@ a {
   width: 63.54vw;
   height: 58.61vh;
   min-height: 468px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1003,11 +1006,18 @@ a {
   opacity: 0;
   transition: all ease-in-out 0.3s;
 }
+@media (max-height: 1080px) {
+  .mf-banner .mf-banner-video {
+    max-height: 100vh;
+  }
+}
 .mf-banner .mf-banner-video video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: bottom center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom center;
+     object-position: bottom center;
 }
 .mf-banner.video-loaded .mf-banner-slide {
   display: none !important;
@@ -1084,7 +1094,7 @@ a {
   text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.3);
 }
 .mf-banner.video-loaded .mf-banner-buttons {
-  bottom: 40%;
+  display: none !important;
 }
 
 .mf-lboes {
@@ -1104,7 +1114,8 @@ a {
 .mf-lboes-bg-mb {
   display: none;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 767px) {
   .mf-lboes-bg-mb {
@@ -1490,7 +1501,8 @@ a {
 .mf-mpeig-item span img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .mf-mpeig-item p {
   font-weight: 700;
@@ -1513,7 +1525,8 @@ a {
   z-index: 3;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border: 4.04px solid #a2bdff;
   overflow: hidden;
   border-radius: 18.48px;
@@ -1749,14 +1762,17 @@ a {
 .mf-blbotmwgp-art img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 767px) {
   .mf-blbotmwgp-art img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: bottom right;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom right;
+       object-position: bottom right;
   }
 }
 .mf-blbotmwgp-info {
@@ -2146,7 +2162,8 @@ a {
 .mf-blbotmwgp-info .box .videos img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .mf-blbotmwgp-info .box .actions {
   display: flex;
@@ -2300,7 +2317,8 @@ a {
 .mf-blbotmwgp-thumb .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .mf-blbotmwgp-thumb .info {
   flex: 1;
@@ -2653,7 +2671,8 @@ a {
 .mf-host-events-item .image img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .mf-host-events-item .info {
   line-height: 20px;
@@ -2921,7 +2940,8 @@ a {
   height: 77.5vh;
   bottom: 6.67vh;
   right: 2.6vw;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (min-height: 1080px) {
   .mf-awaptfyv-bg {
@@ -3324,7 +3344,8 @@ a {
 .mf-mcp-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transform-origin: center;
   transition: all ease-in-out 0.3s;
 }
@@ -3468,13 +3489,15 @@ a {
 .mf-bac-header-bg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 767px) {
   .mf-bac-header-bg {
     height: 310px;
     width: 100vw;
-    object-position: calc(100% + 100px) bottom;
+    -o-object-position: calc(100% + 100px) bottom;
+       object-position: calc(100% + 100px) bottom;
   }
 }
 .mf-bac-header-body {
@@ -3595,7 +3618,8 @@ a {
 .mf-bac-item .image img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .mf-bac-item .title {
   font-weight: 700;
@@ -3637,7 +3661,8 @@ a {
 .mf-tclg .image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .mf-tclg .mf-title {
   font-weight: 700;
@@ -3691,7 +3716,8 @@ a {
 .mf-tclg-items {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
   row-gap: 24px;
 }
 @media (max-width: 1399px) {
@@ -3994,7 +4020,6 @@ a {
 .mf-footer-socials a img {
   width: 80%;
   height: 80%;
-  object-fit: contain;
-}
-
-/*# sourceMappingURL=style.css.map */
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=style.css.map */
