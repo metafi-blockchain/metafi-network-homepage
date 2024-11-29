@@ -45,6 +45,7 @@
 		<!-- Link to Stylesheets (CSS files) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
@@ -74,7 +75,12 @@
 						<a class="mf-header-logo" href="https://metafi.gg/">
 							<img src="assets/images/logo.png?format=webp" alt="MetaFi" />
 						</a>
-						<button type="button" class="close-menu">
+						<button
+							type="button"
+							class="close-menu"
+							aria-label="Close menu"
+							name="btnclosemenu"
+						>
 							<img src="assets/images/icons/icon-close.svg" alt="" />
 						</button>
 						<ul class="mf-header-main-menu">
@@ -329,7 +335,12 @@
 							</li>
 						</ul>
 					</div>
-					<button type="button" class="toggle-menu">
+					<button
+						name="btntogglemenu"
+						type="button"
+						class="toggle-menu"
+						aria-label="Play Video"
+					>
 						<svg
 							width="18"
 							height="15"
@@ -449,6 +460,7 @@
 				</div>
 
 				<button
+					aria-label="Play Video"
 					name="playvideo1"
 					type="button"
 					class="mf-banner-play"
@@ -497,7 +509,7 @@
 					<div class="mf-mpe-slide-item">
 						<img
 							alt="MetaFi"
-							src="assets/images/mpe.png?format=webp"
+							src="assets/images/mpe.webp"
 							class="mf-mpe-bg mf-full-screen"
 						/>
 						<img
@@ -507,19 +519,19 @@
 						/>
 					</div>
 					<!-- <div class="mf-mpe-slide-item">
-						<img src="assets/images/mpe.png?format=webp" class="mf-mpe-bg mf-full-screen" />
+						<img src="assets/images/mpe.webp" class="mf-mpe-bg mf-full-screen" />
 						<img src="assets/images/mpe-mb.png?format=webp" class="mf-mpe-bg-mb" />
 					</div>
 					<div class="mf-mpe-slide-item">
-						<img src="assets/images/mpe.png?format=webp" class="mf-mpe-bg mf-full-screen" />
+						<img src="assets/images/mpe.webp" class="mf-mpe-bg mf-full-screen" />
 						<img src="assets/images/mpe-mb.png?format=webp" class="mf-mpe-bg-mb" />
 					</div>
 					<div class="mf-mpe-slide-item">
-						<img src="assets/images/mpe.png?format=webp" class="mf-mpe-bg mf-full-screen" />
+						<img src="assets/images/mpe.webp" class="mf-mpe-bg mf-full-screen" />
 						<img src="assets/images/mpe-mb.png?format=webp" class="mf-mpe-bg-mb" />
 					</div>
 					<div class="mf-mpe-slide-item">
-						<img src="assets/images/mpe.png?format=webp" class="mf-mpe-bg mf-full-screen" />
+						<img src="assets/images/mpe.webp" class="mf-mpe-bg mf-full-screen" />
 						<img src="assets/images/mpe-mb.png?format=webp" class="mf-mpe-bg-mb" />
 					</div> -->
 				</div>
@@ -730,7 +742,7 @@
 				<div class="mf-blbotmwgp-slide">
 					<div class="mf-blbotmwgp-item">
 						<img
-							src="assets/images/game-1-bg.png?format=webp"
+							src="assets/images/game-1-bg.webp"
 							alt=""
 							class="mf-blbotmwgp-bg mf-full-screen"
 						/>
@@ -763,13 +775,13 @@
 										<div class="video-preview" id="video-preview-1">
 											<div class="preview-item">
 												<img
-													src="assets/images/game-1-video-1.png?format=webp"
+													src="assets/images/game-1-video-1.webp?format=webp"
 													alt=""
 												/>
 											</div>
 											<div class="preview-item">
 												<img
-													src="assets/images/game-1-video-1.png?format=webp"
+													src="assets/images/game-1-video-1.webp?format=webp"
 													alt=""
 												/>
 											</div>
@@ -783,7 +795,7 @@
 										<div class="video-list" id="video-list-1">
 											<div class="item item-0" data-slide="0">
 												<img
-													src="assets/images/game-1-video-1.png?format=webp"
+													src="assets/images/game-1-video-1.webp?format=webp"
 													alt=""
 												/>
 											</div>
@@ -849,6 +861,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo4"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/kNIDk5dQsJU?si=FUoOhm7T9VKU6FkK&autoplay=1&enablejsapi=1`)"
@@ -860,6 +874,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo5"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/kNIDk5dQsJU?si=FUoOhm7T9VKU6FkK&autoplay=1&enablejsapi=1`)"
@@ -871,6 +887,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo6"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/kNIDk5dQsJU?si=FUoOhm7T9VKU6FkK&autoplay=1&enablejsapi=1`)"
@@ -882,6 +900,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo7"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/kNIDk5dQsJU?si=FUoOhm7T9VKU6FkK&autoplay=1&enablejsapi=1`)"
@@ -974,6 +994,7 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
 													name="playvideo2"
 													type="button"
 													class="play"
@@ -982,10 +1003,12 @@
 											</div>
 											<div class="preview-item">
 												<img
-													src="assets/images/game-2-video-2.png?format=webp"
+													src="assets/images/game-2-video-2.webp"
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo8"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/5zqTpcIePoc?autoplay=1&enablejsapi=1`)"
@@ -997,6 +1020,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo9"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/5zqTpcIePoc?autoplay=1&enablejsapi=1`)"
@@ -1008,6 +1033,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo10"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/5zqTpcIePoc?autoplay=1&enablejsapi=1`)"
@@ -1024,7 +1051,7 @@
 
 											<div class="item item-1 active" data-slide="1">
 												<img
-													src="assets/images/game-2-video-2.png?format=webp"
+													src="assets/images/game-2-video-2.webp"
 													alt=""
 												/>
 											</div>
@@ -1094,6 +1121,8 @@
 											<div class="preview-item">
 												<img src="assets/images/game-4-video-1.webp" alt="" />
 												<button
+													aria-label="Play Video"
+													name="playVideo11"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/0T34-WHJ8d0?si=757-gN07rc2ziHZk&autoplay=1&enablejsapi=1`)"
@@ -1105,6 +1134,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo12"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/0T34-WHJ8d0?si=757-gN07rc2ziHZk&autoplay=1&enablejsapi=1`)"
@@ -1113,6 +1144,8 @@
 											<div class="preview-item">
 												<img src="assets/images/game-4-video-3.jpg" alt="" />
 												<button
+													aria-label="Play Video"
+													name="playVideo13"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/0T34-WHJ8d0?si=757-gN07rc2ziHZk&autoplay=1&enablejsapi=1`)"
@@ -1121,6 +1154,8 @@
 											<div class="preview-item">
 												<img src="assets/images/game-4-video-4.webp" alt="" />
 												<button
+													aria-label="Play Video"
+													name="playVideo14"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/0T34-WHJ8d0?si=757-gN07rc2ziHZk&autoplay=1&enablejsapi=1`)"
@@ -1202,6 +1237,8 @@
 											<div class="preview-item">
 												<img src="assets/images/game-5-video-1.jpg" alt="" />
 												<button
+													aria-label="Play Video"
+													name="playVideo15"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/RK_45Z-2QC4?si=SOllsKfObeEOeUpE&autoplay=1&enablejsapi=1`)"
@@ -1213,6 +1250,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo16"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/RK_45Z-2QC4?si=SOllsKfObeEOeUpE&autoplay=1&enablejsapi=1`)"
@@ -1224,6 +1263,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo17"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/RK_45Z-2QC4?si=SOllsKfObeEOeUpE&autoplay=1&enablejsapi=1`)"
@@ -1235,6 +1276,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo18"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/RK_45Z-2QC4?si=SOllsKfObeEOeUpE&autoplay=1&enablejsapi=1`)"
@@ -1384,7 +1427,7 @@
 
 					<div class="mf-blbotmwgp-item">
 						<img
-							src="assets/images/game-7-bg.png?format=webp"
+							src="assets/images/game-7-bg.webp"
 							alt=""
 							class="mf-blbotmwgp-bg mf-full-screen"
 						/>
@@ -1412,6 +1455,8 @@
 											<div class="preview-item">
 												<img src="assets/images/game-7-video-1.jpg" alt="" />
 												<button
+													aria-label="Play Video"
+													name="playVideo19"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/htla7Rd7XCw?si=ayxAfIH0WFMyzvl4&autoplay=1&enablejsapi=1`)"
@@ -1423,6 +1468,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo20"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/htla7Rd7XCw?si=ayxAfIH0WFMyzvl4&autoplay=1&enablejsapi=1`)"
@@ -1434,6 +1481,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo21"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/htla7Rd7XCw?si=ayxAfIH0WFMyzvl4&autoplay=1&enablejsapi=1`)"
@@ -1445,6 +1494,8 @@
 													alt=""
 												/>
 												<button
+													aria-label="Play Video"
+													name="playVideo22"
 													type="button"
 													class="play"
 													onclick="playVideo(`https://www.youtube.com/embed/htla7Rd7XCw?si=ayxAfIH0WFMyzvl4&autoplay=1&enablejsapi=1`)"
@@ -1601,6 +1652,8 @@
 					<div class="container">
 						<div class="mf-host-events-header">
 							<button
+								aria-label="Play Video"
+								name="playVideo23"
 								type="button"
 								class="play"
 								data-aos="fade-up"
@@ -1690,7 +1743,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6">
-							<img src="assets/images/byo-metaverse.png?format=webp" alt="" />
+							<img src="assets/images/byo-metaverse.webp" alt="" />
 						</div>
 						<div class="col-lg-6">
 							<div class="mf-byo-body">
@@ -1701,6 +1754,7 @@
 									METAVERSE
 								</h3>
 								<button
+									aria-label="Play Video"
 									name="playvideo3"
 									type="button"
 									class="play"
@@ -1737,7 +1791,7 @@
 
 			<section class="mf-awaptfyv mf-full-screen" id="build">
 				<img
-					src="assets/images/awaptfyv.png?format=webp"
+					src="assets/images/awaptfyv.webp"
 					alt=""
 					class="mf-awaptfyv-bg"
 				/>
@@ -2177,12 +2231,20 @@
 				<div class="mf-footer-inner">
 					<ul class="mf-footer-menu">
 						<li>&copy;&nbsp;MetaFi Foundation. All rights reserved.</li>
-						<li><a href="#">Term & Conditions </a></li>
-						<li><a href="#">Privacy Policy </a></li>
-						<li><a href="#">Legal notices </a></li>
+						<li>
+							<a href="https://metafi.sh/" target="_blank"
+								>Term & Conditions
+							</a>
+						</li>
+						<li>
+							<a href="https://metafi.sh/" target="_blank">Privacy Policy </a>
+						</li>
+						<li>
+							<a href="https://metafi.sh/" target="_blank">Legal notices </a>
+						</li>
 					</ul>
 					<div class="mf-footer-socials">
-						<a href="#">
+						<a href="https://metafi.sh/" target="_blank" aria-label="X">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								shape-rendering="geometricPrecision"
@@ -2199,7 +2261,7 @@
 								/>
 							</svg>
 						</a>
-						<a href="#">
+						<a href="https://metafi.sh/" target="_blank" aria-label="Discord">
 							<svg
 								width="40"
 								height="35"
@@ -2215,7 +2277,7 @@
 								/>
 							</svg>
 						</a>
-						<a href="#">
+						<a href="https://metafi.sh/" target="_blank" aria-label="Telegram">
 							<svg
 								width="35"
 								height="30"
@@ -2229,7 +2291,7 @@
 								/>
 							</svg>
 						</a>
-						<a href="#">
+						<a href="https://metafi.sh/" target="_blank" aria-label="Facebook">
 							<svg
 								width="16"
 								height="30"
