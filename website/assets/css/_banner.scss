@@ -207,6 +207,8 @@
 		border: 0;
 		cursor: pointer;
 		outline: 0;
+		background-image: url(../images/icons/icon-play-video.webp);
+		background-size: cover;
 		&:hover {
 			img {
 				transform: scale(1.1);

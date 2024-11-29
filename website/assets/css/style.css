@@ -915,6 +915,8 @@ a {
   border: 0;
   cursor: pointer;
   outline: 0;
+  background-image: url(../images/icons/icon-play-video.webp);
+  background-size: cover;
 }
 .mf-banner-play:hover img {
   transform: scale(1.1);
@@ -2064,6 +2066,8 @@ a {
   border: 0;
   cursor: pointer;
   outline: 0;
+  background-image: url(../images/icons/icon-play-video.webp);
+  background-size: cover;
 }
 @media (min-height: 1080px) {
   .mf-blbotmwgp-info .box .videos .video-preview .preview-item .play {
@@ -2574,6 +2578,8 @@ a {
   background-color: transparent;
   border: 0;
   outline: 0;
+  background-image: url(../images/icons/icon-play-video.webp);
+  background-size: cover;
 }
 @media (min-height: 1080px) {
   .mf-host-events-header .play {
@@ -2935,6 +2941,8 @@ a {
   background-color: transparent;
   border: 0;
   outline: 0;
+  background-image: url(../images/icons/icon-play-video.webp);
+  background-size: cover;
 }
 @media (min-height: 1080px) {
   .mf-byo-body .play {
