@@ -309,8 +309,10 @@ a {
   margin-bottom: -30px;
   z-index: 4;
 }
-.modal iframe {
-  min-height: 210px !important;
+@media (max-width: 475px) {
+  .modal iframe {
+    min-height: 210px !important;
+  }
 }
 
 .mf-header {
