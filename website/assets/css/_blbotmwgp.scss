@@ -10,8 +10,8 @@
 			min-height: 1059px;
 		}
 		@media (max-width: 767px) {
-			min-height: 522px;
-			height: 522px;
+			min-height: 600px;
+			height: 600px;
 		}
 	}
 	&-title {
@@ -53,7 +53,7 @@
 			@media (max-width: 767px) {
 				font-size: 18px;
 				line-height: 24px;
-				width: 110%;
+				width: 100%;
 			}
 		}
 	}
@@ -76,12 +76,15 @@
 			top: 200px;
 		}
 		@media (max-width: 767px) {
-			top: auto;
-			width: 249px;
-			height: 388px;
-			bottom: 0;
-			left: auto;
-			right: 45vw;
+			// height: 80%;
+			// top: auto;
+			// bottom: 0;
+			// left: 0;
+			// right: 70px;
+			height: auto;
+			top: 110px;
+			bottom: auto;
+			width: 100%;
 		}
 		img {
 			max-width: 100%;
@@ -92,6 +95,15 @@
 				height: 100%;
 				object-fit: cover;
 				object-position: bottom right;
+				&:not(.mb) {
+					display: none;
+				}
+			}
+			&.mb {
+				display: none;
+				@media (max-width: 767px) {
+					display: block;
+				}
 			}
 		}
 	}
@@ -116,7 +128,7 @@
 		.box {
 			margin-left: auto;
 			width: 44.43vw;
-			
+
 			.description {
 				background: #000000;
 				border-radius: 10px;
@@ -137,8 +149,8 @@
 					margin-left: 24px;
 				}
 				@media (max-width: 767px) {
-					bottom: 259px;
-					width: 210px;
+					bottom: 305px;
+					width: 40vw;
 					border-radius: 6px;
 					font-size: 10px;
 					line-height: 14px;
@@ -188,8 +200,8 @@
 						text-align: left;
 					}
 					@media (max-width: 767px) {
-						font-size: 11px;
-						-webkit-line-clamp: 3;
+						font-size: 10px;
+						-webkit-line-clamp: 4;
 					}
 				}
 			}
@@ -228,13 +240,13 @@
 					gap: 10px;
 				}
 				@media (max-width: 767px) {
-					bottom: 82px;
+					bottom: 65px;
 					top: auto;
-					width: 210px;
+					width: calc(100vw - 30px);
 					left: auto;
 					right: calc((100vw - 378px - 20px) / 2);
 					transform: none;
-					padding: 5px;
+					padding: 6px 30px 10px;
 					margin-bottom: 0;
 					border-radius: 6px;
 				}
@@ -269,7 +281,7 @@
 							border-radius: 12px;
 						}
 						@media (max-width: 767px) {
-							height: 114px;
+							height: 160px;
 							border-radius: 6px;
 						}
 						&:after {
@@ -324,6 +336,31 @@
 							}
 						}
 					}
+
+					.slick-arrow {
+						top: calc(100% + 34px);
+						width: 14px;
+						height: 16px;
+						background-color: transparent;
+						background-size: cover;
+						border: 0;
+						padding: 0;
+						cursor: pointer;
+						outline: 0;
+						display: none;
+						z-index: 2;
+						&::before {
+							display: none;
+						}
+						&.slick-prev {
+							left: 0;
+							background-image: url(../images/icons/icon-prev.svg);
+						}
+						&.slick-next {
+							background-image: url(../images/icons/icon-next.svg);
+							right: 0;
+						}
+					}
 				}
 				.video-list {
 					width: 160px;
@@ -334,6 +371,7 @@
 					gap: 13px;
 					max-height: 100%;
 					overflow-y: auto;
+					position: relative;
 					@media (min-height: 1080px) {
 						width: calc(6.77vw + 30px);
 						min-width: calc(6.77vw + 30px);
@@ -348,6 +386,7 @@
 						flex-direction: row;
 						width: 100% !important;
 						padding-right: 0;
+						padding: 0 24px;
 					}
 					.item {
 						cursor: pointer;
@@ -376,8 +415,8 @@
 							min-height: 60px !important;
 						}
 						@media (max-width: 767px) {
-							height: 36px !important;
-							min-height: 36px !important;
+							height: 50px !important;
+							min-height: 50px !important;
 							border-radius: 5px;
 						}
 						&:after {
@@ -421,12 +460,12 @@
 					transform: translateX(-50%);
 				}
 				@media (max-width: 767px) {
+					width: 100%;
+					right: auto;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom: 20px;
 					top: auto;
-					bottom: 37px;
-					gap: 16px;
-					right: calc((100vw - 378px - 20px) / 2);
-					left: auto;
-					transform: none;
 				}
 				@media (max-width: 400px) {
 					right: calc((100vw - 328px) / 2);
@@ -450,7 +489,7 @@
 						min-height: 40px !important;
 						&::before,
 						&:after {
-							border-radius: 10px;
+							border-radius: 6px;
 						}
 						span {
 							font-size: 13px !important;
@@ -460,12 +499,12 @@
 						height: 30px !important;
 						min-height: 30px !important;
 						min-width: 100px !important;
-						&:last-child{
+						&:last-child {
 							width: 120px;
 						}
 						&::before {
-							top: 2px;
-							height: calc(100% + 2px);
+							top: 1px;
+							height: calc(100% + 1px);
 						}
 						span {
 							font-size: 12px !important;

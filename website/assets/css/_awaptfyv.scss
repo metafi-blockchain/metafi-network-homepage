@@ -79,6 +79,56 @@
 				width: 100%;
 			}
 		}
+		.tabs-wrap {
+			@media (max-width: 767px) {
+				display: block;
+				overflow: hidden;
+				padding: 0;
+				padding-top: 10px;
+				margin-left: calc((100vw - 378px - 20px) / -2);
+				margin-right: calc((100vw - 378px - 20px) / -2);
+				.tabs {
+					.btn {
+						margin: 0 4px;
+						padding: 0;
+						margin-top: 2px;
+						background: linear-gradient(
+							174.64deg,
+							#0c2d89 9.83%,
+							#0c2d89 89.43%
+						) !important;
+						&:last-child {
+							display: none !important;
+						}
+						&::after {
+							background: linear-gradient(
+								174.64deg,
+								#0c2d89 9.83%,
+								#0c2d89 89.43%
+							) !important;
+						}
+						span {
+							line-height: 0.8;
+							display: inline-flex;
+						}
+						&.slick-center {
+							margin-top: 0;
+							border: 2px solid #2badfb;
+							height: 30px;
+							min-height: 30px;
+							&:after {
+								height: 100% !important;
+								background: #0576dc !important;
+								filter: none !important;
+							}
+							span {
+								color: #fff !important;
+							}
+						}
+					}
+				}
+			}
+		}
 		.tabs {
 			margin-bottom: 7vh;
 			display: flex;
@@ -105,13 +155,14 @@
 				margin-bottom: 10px;
 			}
 			@media (max-width: 767px) {
-				gap: 8px;
+				display: block;
+				overflow: hidden;
 			}
 			.btn {
 				border-radius: 15px;
 				@media (max-width: 991px) {
 					border-radius: 6px;
-					min-width: 72px;
+					min-width: 78px;
 					height: 24px;
 					min-height: 24px;
 					&::before,
@@ -125,7 +176,6 @@
 				@media (max-width: 767px) {
 					span {
 						font-size: 12px;
-						font-weight: 500;
 					}
 				}
 				&::before {
@@ -134,25 +184,27 @@
 				&:after {
 					box-shadow: none;
 				}
-				&.btn-primary {
-					height: 60px;
-					border: 4px solid #2badfb;
-					@media (max-width: 1919px) {
-						height: 50px;
-					}
-					@media (max-width: 991px) {
-						height: 28px;
-						min-height: 28px;
-					}
-					&:after {
-						height: 100% !important;
-						background-color: #0576dc !important;
-						filter: none !important;
-					}
-					span {
-						color: #fff !important;
+				@media (min-width: 768px) {
+					&.btn-primary {
+						height: 60px;
+						border: 4px solid #2badfb;
+						@media (max-width: 1919px) {
+							height: 50px;
+						}
 						@media (max-width: 991px) {
-							font-size: 12px;
+							height: 28px;
+							min-height: 28px;
+						}
+						&:after {
+							height: 100% !important;
+							background-color: #0576dc !important;
+							filter: none !important;
+						}
+						span {
+							color: #fff !important;
+							@media (max-width: 991px) {
+								font-size: 12px;
+							}
 						}
 					}
 				}
@@ -212,8 +264,10 @@
 			}
 			@media (max-width: 991px) {
 				justify-content: center;
+				gap: 10px;
 				.btn {
 					min-width: 96px;
+					width: 96px;
 					min-height: 28px;
 					height: 28px;
 					span {
@@ -227,8 +281,8 @@
 							border-radius: 6px;
 						}
 						&::before {
-							top: 2px;
-							height: calc(100% + 2px);
+							top: 1px;
+							height: calc(100% + 1px);
 						}
 					}
 				}

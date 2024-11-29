@@ -1,5 +1,17 @@
 .mf-host-events {
 	position: relative;
+	.container,
+	.container-fluid,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		@media (max-width: 1199px) {
+			width: 100% !important;
+			--bs-gutter-x: 0 !important;
+		}
+	}
 	@media (max-width: 767px) {
 		background-image: url(../images/host-events-mb.png);
 		background-size: contain;
@@ -15,7 +27,7 @@
 		}
 	}
 	&-bg {
-		@media (max-width: 991px) {
+		@media (max-width: 1199px) {
 			min-height: 1000px;
 		}
 		@media (max-width: 767px) {
@@ -168,8 +180,16 @@
 		border-radius: 20px;
 		height: 100%;
 		text-align: center;
+		margin: 0 24px;
 		@media (max-width: 767px) {
 			padding: 3px 4px 12px;
+			margin: 0 12px;
+			transform: scale(0.9);
+			transform-origin: center;
+			transition: all ease-in-out 0.3s;
+			&.slick-center {
+				transform: scale(1.1);
+			}
 		}
 		.image {
 			height: 16.85vh;
@@ -198,6 +218,9 @@
 				font-size: 20px;
 				line-height: 30px;
 				color: #ffffff;
+				@media (max-width: 1199px) {
+					font-size: 18px;
+				}
 				@media (max-width: 767px) {
 					font-size: 12px;
 					line-height: 16px;
