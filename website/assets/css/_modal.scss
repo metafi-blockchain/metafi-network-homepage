@@ -15,8 +15,8 @@
     }
   }
   iframe{
-    @media(max-width:475px){
-      min-height: 210px !important;
+    @media(max-width:767px){
+      min-height: calc(100vw - 60px) !important;
     }
   }
 }
