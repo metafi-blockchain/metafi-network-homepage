@@ -311,7 +311,7 @@ a {
 }
 @media (max-width: 767px) {
   .modal iframe {
-    min-height: calc(100vw - 60px) !important;
+    min-height: calc(100vw - 150px) !important;
   }
 }
 

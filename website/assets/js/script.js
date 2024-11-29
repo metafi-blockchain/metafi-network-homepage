@@ -94,7 +94,7 @@ $(document).ready(function () {
 	});
 	// MPEIG
 	$('.mf-mpeig-slide').slick({
-		slidesToShow: 5,
+		slidesToShow: 7,
 		slidesToScroll: 3,
 		centerMode: true,
 		centerPadding: '10px',
@@ -105,6 +105,13 @@ $(document).ready(function () {
 		swipe: false,
 		autoplaySpeed: 2000,
 		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 3,
+				}
+			},
 			{
 				breakpoint: 767,
 				settings: {
