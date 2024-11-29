@@ -4,10 +4,6 @@ const tooltipTriggerList = document.querySelectorAll(
 const tooltipList = [...tooltipTriggerList].map(
 	tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
 );
-$('.mf-loading').hide();
-setTimeout(() => {
-	$('.mf-loading').hide();
-}, 300);
 $(document).ready(function () {
 	const setMenuMb = () => {
 		if (window.innerWidth > 1199) {
@@ -336,3 +332,7 @@ function showMaintenance(event) {
 	event.preventDefault();
 	alert('Website currently under maintenance');
 }
+
+setTimeout(() => {
+	$('.mf-loading').hide();
+}, 400);
