@@ -1283,7 +1283,6 @@ a {
 .mf-mpe {
   position: relative;
   overflow: hidden;
-  transition: all ease-in-out 0.3s;
 }
 .mf-mpe .mf-full-screen {
   height: auto;
@@ -1410,7 +1409,6 @@ a {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  transition: all ease-in-out 0.3s;
 }
 @media (min-width: 1920px) {
   .mf-mpeig {
@@ -1779,7 +1777,6 @@ a {
   left: 0;
   width: 100%;
   text-align: center;
-  transition: all ease-in-out 0.3s;
 }
 @media (min-height: 1080px) {
   .mf-blbotmwgp-title {
@@ -3838,6 +3835,8 @@ a {
   text-align: center;
   margin-bottom: 16px;
   line-height: 20px;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 991px) {
   .mf-bac-item {
