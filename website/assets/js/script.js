@@ -5,6 +5,9 @@ const tooltipList = [...tooltipTriggerList].map(
 	tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
 );
 $(document).ready(function () {
+	AOS.init({
+		duration: 800
+	});
 	const setMenuMb = () => {
 		if (window.innerWidth > 1199) {
 			$('#main-menu').removeClass('show');
@@ -105,7 +108,7 @@ $(document).ready(function () {
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 5,
-					slidesToScroll: 3,
+					slidesToScroll: 3
 				}
 			},
 			{
@@ -173,7 +176,8 @@ $(document).ready(function () {
 					settings: {
 						arrows: true
 					}
-				},{
+				},
+				{
 					breakpoint: 0,
 					settings: {
 						arrows: true
@@ -216,10 +220,6 @@ $(document).ready(function () {
 			event.preventDefault();
 			alert('Coming soon!');
 		}
-	});
-
-	AOS.init({
-		duration: 800
 	});
 
 	// document
@@ -295,7 +295,7 @@ function checkWidth() {
 				focusOnSelect: true,
 				slidesToShow: 3,
 				slidesToScroll: 1,
-				infinite: true,
+				infinite: true
 			});
 			$('.mf-awaptfyv .tabs').slick('slickGoTo', 1);
 			$('.mf-awaptfyv .tabs .btn').on('click', function () {
@@ -334,5 +334,9 @@ function showMaintenance(event) {
 }
 
 setTimeout(() => {
-	$('.mf-loading').hide();
-}, 400);
+	$('.mf-loading').addClass('hide');
+	$('body').removeClass('overflow-hidden');
+	setTimeout(() => {
+		$('.mf-loading').remove();
+	}, 400);
+}, 800);
