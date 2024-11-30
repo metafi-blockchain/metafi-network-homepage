@@ -77,15 +77,15 @@
 			padding: 0;
 			li {
 				@media (max-width: 767px) {
-					line-height: 20px;
-					height: 20px;
+					line-height: 24px;
+					height: 24px;
 				}
 				a {
 					line-height: 35px;
 					@media (max-width: 767px) {
 						white-space: nowrap;
 						font-size: 12px;
-						line-height: 20px;
+						line-height: 24px;
 					}
 				}
 			}

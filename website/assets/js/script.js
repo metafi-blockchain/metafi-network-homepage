@@ -5,9 +5,10 @@ const tooltipList = [...tooltipTriggerList].map(
 	tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
 );
 $(document).ready(function () {
-	AOS.init({
-		duration: 800
-	});
+	window.scrollTo(0, 0);
+	// AOS.init({
+	// 	duration: 800
+	// });
 	const setMenuMb = () => {
 		if (window.innerWidth > 1199) {
 			$('#main-menu').removeClass('show');
@@ -36,6 +37,7 @@ $(document).ready(function () {
 			$('body').removeClass('menu-show');
 		}
 	});
+
 	let lastScrollTop = 0;
 	const header = document.getElementById('header');
 	window.addEventListener('scroll', function () {
@@ -45,31 +47,19 @@ $(document).ready(function () {
 		if (currentScroll > lastScrollTop) {
 			// Scrolling down, remove sticky class
 			header.classList.remove('sticky');
+			this.document.body.classList.remove('menu-fixed');
 		} else {
 			// Scrolling up, add sticky class
 			header.classList.add('sticky');
+			this.document.body.classList.add('menu-fixed');
 		}
 
 		if (currentScroll === 0) {
 			header.classList.remove('sticky');
+			this.document.body.classList.remove('menu-fixed');
 		}
 		lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 	});
-	// Header
-	// $(window).scroll(function () {
-	// 	var wScroll = $(this).scrollTop();
-	// 	if (wScroll >= 80) {
-	// 		$('.mf-header').addClass('sticky');
-	// 	} else {
-	// 		$('.mf-header').removeClass('sticky');
-	// 	}
-	// });
-
-	// if ($(window).scrollTop() >= 80) {
-	// 	$('.mf-header').addClass('sticky');
-	// } else {
-	// 	$('.mf-header').removeClass('sticky');
-	// }
 
 	// Banner
 	$('.mf-banner-slide').slick({
@@ -222,15 +212,6 @@ $(document).ready(function () {
 		}
 	});
 
-	// document
-	// 	.getElementById('bannerVideo')
-	// 	.addEventListener('loadeddata', function () {
-	// 		setTimeout(() => {
-	// 			$('.mf-banner').addClass('video-loaded');
-	// 			$('.mf-header').addClass('sticky');
-	// 		}, 5000);
-	// 	});
-
 	$('.mf-host-events-slide').slick({
 		dots: false,
 		arrows: false,
@@ -283,7 +264,7 @@ function checkWidth() {
 				arrows: false,
 				dots: false,
 				centerMode: true,
-				centerPadding: '120px'
+				centerPadding: '100px'
 			});
 		}
 		if (!$('.mf-awaptfyv .tabs').hasClass('slick-initialized')) {
@@ -291,7 +272,7 @@ function checkWidth() {
 				arrows: false,
 				dots: false,
 				centerMode: true,
-				centerPadding: '50px',
+				centerPadding: 0,
 				focusOnSelect: true,
 				slidesToShow: 3,
 				slidesToScroll: 1,
@@ -340,3 +321,46 @@ setTimeout(() => {
 		$('.mf-loading').remove();
 	}, 400);
 }, 800);
+
+// let currentSection = 0;
+// const sections = document.querySelectorAll('section');
+// let isScrolling = false;
+// let scrollTimeout;
+
+// function goToSection(index) {
+// 	if (index >= 0 && index < sections.length) {
+// 		sections[index].scrollIntoView({
+// 			behavior: 'smooth',
+// 			block: 'start'
+// 		});
+// 		currentSection = index;
+// 	}
+// }
+
+// function goToSection(index) {
+// 	if (index >= 0 && index < sections.length) {
+// 		sections[index].scrollIntoView({
+// 			behavior: 'smooth',
+// 			block: 'start'
+// 		});
+// 		currentSection = index;
+// 	}
+// }
+
+// function handleScroll(event) {
+// 	if (isScrolling) return;
+
+// 	clearTimeout(scrollTimeout);
+// 	isScrolling = true;
+
+// 	scrollTimeout = setTimeout(() => {
+// 		if (event.deltaY > 0) {
+// 			goToSection(currentSection + 1);
+// 		} else {
+// 			goToSection(currentSection - 1);
+// 		}
+// 		isScrolling = false;
+// 	}, 200);
+// }
+
+// window.addEventListener('wheel', handleScroll);

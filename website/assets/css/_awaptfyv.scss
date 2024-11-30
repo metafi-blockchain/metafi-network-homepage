@@ -85,8 +85,8 @@
 				overflow: hidden;
 				padding: 0;
 				padding-top: 10px;
-				margin-left: calc((100vw - 378px - 20px) / -2);
-				margin-right: calc((100vw - 378px - 20px) / -2);
+				margin-left: calc((100vw - 378px - 20px) / 2);
+				margin-right: calc((100vw - 378px - 20px) / 2);
 				.tabs {
 					.btn {
 						margin: 0 4px;
@@ -97,9 +97,6 @@
 							#0c2d89 9.83%,
 							#0c2d89 89.43%
 						) !important;
-						&:last-child {
-							display: none !important;
-						}
 						&::after {
 							background: linear-gradient(
 								174.64deg,
@@ -158,13 +155,17 @@
 				display: block;
 				overflow: hidden;
 			}
+			.slick-track{
+				display: flex;
+			}
 			.btn {
 				border-radius: 15px;
 				@media (max-width: 991px) {
 					border-radius: 6px;
 					min-width: 78px;
-					height: 24px;
-					min-height: 24px;
+					height: 28px;
+					min-height: 28px;
+					line-height: 24px;
 					&::before,
 					&:after {
 						border-radius: 6px;
@@ -174,6 +175,10 @@
 					}
 				}
 				@media (max-width: 767px) {
+					min-width: unset;
+					max-width: unset;
+					padding-left: 10px;
+					padding-right: 10px;
 					span {
 						font-size: 12px;
 					}
@@ -192,8 +197,8 @@
 							height: 50px;
 						}
 						@media (max-width: 991px) {
-							height: 28px;
-							min-height: 28px;
+							height: 32px;
+							min-height: 32px;
 						}
 						&:after {
 							height: 100% !important;

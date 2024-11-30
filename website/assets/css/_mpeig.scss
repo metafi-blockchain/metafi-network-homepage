@@ -1,3 +1,10 @@
+.menu-fixed {
+	.mf-mpeig {
+		@media (min-width: 992px) {
+			padding-top: 70px;
+		}
+	}
+}
 .mf-mpeig {
 	padding-top: 50px;
 	background-color: #1b2364;
@@ -8,13 +15,14 @@
 	max-width: 1920px;
 	margin-left: auto;
 	margin-right: auto;
+	transition: all ease-in-out .3s;
 	@media (min-width: 1920px) {
 		background-color: transparent;
 	}
 	@media (max-width: 1819px) {
-		min-height: 850px;
-		height: 850px;
-		max-height: 850px;
+		min-height: 800px;
+		height: 800px;
+		max-height: 800px;
 	}
 	@media (max-width: 1199px) {
 		min-height: 750px;
