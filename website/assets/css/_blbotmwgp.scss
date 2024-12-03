@@ -68,7 +68,8 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 41.98vw;
+		min-width: 41.98vw;
+		max-width: 55vw;
 		height: 86.38vh;
 		display: flex;
 		align-items: flex-end;
