@@ -403,6 +403,7 @@ a {
   padding: 20px 0;
   z-index: 999;
   transition: all ease-in-out 0.3s;
+  background-color: #030407;
 }
 @media (max-width: 767px) {
   .mf-header {
@@ -853,13 +854,12 @@ a {
   font-size: 64px;
   line-height: 96px;
   text-align: center;
-  background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: -5px;
+  padding: 16px 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #006AFF;
+  line-height: 1 !important;
 }
 @media (min-height: 720px) {
   .mf-banner-inner h1 {
@@ -881,6 +881,12 @@ a {
 }
 @media (max-width: 767px) {
   .mf-banner-inner h1 {
+    background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 0;
@@ -902,6 +908,11 @@ a {
   .mf-banner-inner p {
     font-size: 12px;
     line-height: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .mf-banner-inner p {
+    display: none;
   }
 }
 .mf-banner-image {
