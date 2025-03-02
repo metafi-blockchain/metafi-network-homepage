@@ -881,8 +881,8 @@ a {
 }
 @media (max-width: 767px) {
   .mf-banner-inner h1 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: 0;
   }
 }
