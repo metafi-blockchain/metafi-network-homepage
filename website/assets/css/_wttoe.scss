@@ -1,0 +1,85 @@
+.mf-wttoe {
+	padding: 106px 0 144px;
+	background-image: url(/assets/images/wttoe.png);
+	background-size: cover;
+	background-position: top right;
+	@media (max-width: 1199px) {
+		padding: 60px 0;
+		background: #091521;
+	}
+    @media (max-width: 767px) {
+		padding: 40px 0;
+    }
+	.mf-title {
+        color: #fff;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 60px;
+		margin-bottom: 20px;
+		@media (max-width: 991px) {
+            font-size: 26px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+		@media (max-width: 767px) {
+			font-size: 18px;
+			line-height: 24px;
+			height: 51px;
+			margin-bottom: 0;
+		}
+	}
+	.inner {
+		width: 892px;
+		max-width: 100%;
+		color: #bad8fb;
+		@media (max-width: 767px) {
+			font-size: 12px;
+		}
+		p {
+			margin-bottom: 25px;
+			&:last-of-type {
+				margin-bottom: 46px;
+			}
+		}
+	}
+	.buttons {
+		display: inline-flex;
+		gap: 60px;
+		@media (max-width: 1199px) {
+            gap: 20px;
+			.btn {
+				span {
+					font-size: 18px !important;
+				}
+			}
+		}
+		@media (max-width: 991px) {
+			.btn {
+				height: 40px !important;
+				min-height: 40px !important;
+				&::before,
+				&:after {
+					border-radius: 6px;
+				}
+				span {
+					font-size: 13px !important;
+				}
+			}
+		}
+		@media (max-width: 767px) {
+			gap: 10px;
+			.btn {
+				height: 30px !important;
+				min-height: 30px !important;
+				min-width: 100px !important;
+				&::before {
+					top: 1px;
+					height: calc(100% + 1px);
+				}
+				span {
+					font-size: 12px !important;
+				}
+			}
+		}
+	}
+}
