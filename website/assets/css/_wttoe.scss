@@ -1,31 +1,35 @@
 .mf-wttoe {
-	padding: 106px 0 144px;
+	padding: 0 0 112px;
 	background-image: url(/assets/images/wttoe.png);
 	background-size: cover;
 	background-position: top right;
 	@media (max-width: 1199px) {
-		padding: 60px 0;
-		background: #091521;
+		padding: 0 0 60px;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/wttoe-mb.png);
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
 	}
-    @media (max-width: 767px) {
-		padding: 40px 0;
-    }
+	@media (max-width: 767px) {
+		padding: 0 0 40px;
+	}
 	.mf-title {
-        color: #fff;
+		color: #fff;
 		font-weight: 700;
 		font-size: 48px;
 		line-height: 60px;
 		margin-bottom: 20px;
+		span {
+			white-space: nowrap;
+		}
 		@media (max-width: 991px) {
-            font-size: 26px;
-            font-size: 32px;
-            line-height: 40px;
-        }
+			font-size: 26px;
+			font-size: 32px;
+			line-height: 40px;
+		}
 		@media (max-width: 767px) {
 			font-size: 18px;
 			line-height: 24px;
-			height: 51px;
-			margin-bottom: 0;
 		}
 	}
 	.inner {
@@ -34,6 +38,12 @@
 		color: #bad8fb;
 		@media (max-width: 767px) {
 			font-size: 12px;
+		}
+		.mf-logo-title {
+			margin-bottom: 39px;
+			@media (max-width: 991px) {
+				margin-bottom: 20px;
+			}
 		}
 		p {
 			margin-bottom: 25px;
@@ -44,9 +54,9 @@
 	}
 	.buttons {
 		display: inline-flex;
-		gap: 60px;
+		gap: 34px;
 		@media (max-width: 1199px) {
-            gap: 20px;
+			gap: 20px;
 			.btn {
 				span {
 					font-size: 18px !important;

@@ -3,6 +3,7 @@
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
+	padding-top: 80px;
 	&::after {
 		content: '';
 		position: absolute;
@@ -16,9 +17,8 @@
 		opacity: 0;
 	}
 	@media (max-width: 767px) {
+		padding-top: 60px;
 		background: none;
-		// background-image: url(../images/banner-bg-mb.png);
-		// background-size: cover;
 		&::before {
 			content: '';
 			position: absolute;
@@ -49,7 +49,6 @@
 	&-mb {
 		display: none !important;
 		width: 100%;
-		// margin-top: 116px;
 		@media (max-width: 767px) {
 			display: block !important;
 		}
@@ -58,7 +57,6 @@
 		margin: 0 !important;
 		width: 100%;
 		@media (max-width: 767px) {
-			// width: 320px;
 			width: 100%;
 			margin-left: auto !important;
 			margin-right: auto !important;
@@ -72,6 +70,29 @@
 		transform: translateX(-50%);
 		text-align: center;
 		padding-top: 14.26vh;
+		.box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 26px 20px;
+			background: rgba(255, 255, 255, 0.8);
+			border-radius: 20px;
+			width: 762px;
+			max-width: 100%;
+			@media (max-width: 991px) {
+				margin-top: 80px;
+			}
+			@media (max-width: 767px) {
+				margin-top: 0;
+				background: transparent;
+				padding: 0;
+				width: 100%;
+			}
+			p {
+				margin-bottom: 0 !important;
+			}
+		}
 		@media (min-height: 1080px) {
 			padding-top: 154px;
 		}
@@ -87,13 +108,16 @@
 			font-size: 64px;
 			line-height: 96px;
 			text-align: center;
-			background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-			text-fill-color: transparent;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			margin-bottom: -5px;
+			color: #006aff;
+			@media (max-width: 767px) {
+				background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				margin-bottom: -5px;
+			}
 			@media (min-height: 720px) {
 				font-size: 3.33vw;
 				line-height: 8.88vh;
@@ -117,13 +141,14 @@
 			font-size: 18px;
 			line-height: 24px;
 			text-align: center;
-			background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-			text-fill-color: transparent;
-			margin-bottom: 9.9vh;
+			color: #006aff;
 			@media (max-width: 767px) {
+				background: linear-gradient(180deg, #ffffff 0%, #7e7e7e 146.07%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+				margin-bottom: 9.9vh;
 				font-size: 12px;
 				line-height: 14px;
 			}

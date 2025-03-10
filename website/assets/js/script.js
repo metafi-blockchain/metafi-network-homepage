@@ -38,28 +38,25 @@ $(document).ready(function () {
 		}
 	});
 
-	let lastScrollTop = 0;
-	const header = document.getElementById('header');
-	window.addEventListener('scroll', function () {
-		let currentScroll =
-			window.pageYOffset || document.documentElement.scrollTop;
-		// Check if the user is scrolling up or down
-		if (currentScroll > lastScrollTop) {
-			// Scrolling down, remove sticky class
-			header.classList.remove('sticky');
-			this.document.body.classList.remove('menu-fixed');
-		} else {
-			// Scrolling up, add sticky class
-			header.classList.add('sticky');
-			this.document.body.classList.add('menu-fixed');
-		}
+	// let lastScrollTop = 0;
+	// const header = document.getElementById('header');
+	// window.addEventListener('scroll', function () {
+	// 	let currentScroll =
+	// 		window.pageYOffset || document.documentElement.scrollTop;
+	// 	if (currentScroll > lastScrollTop) {
+	// 		header.classList.remove('sticky');
+	// 		this.document.body.classList.remove('menu-fixed');
+	// 	} else {
+	// 		header.classList.add('sticky');
+	// 		this.document.body.classList.add('menu-fixed');
+	// 	}
 
-		if (currentScroll === 0) {
-			header.classList.remove('sticky');
-			this.document.body.classList.remove('menu-fixed');
-		}
-		lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-	});
+	// 	if (currentScroll === 0) {
+	// 		header.classList.remove('sticky');
+	// 		this.document.body.classList.remove('menu-fixed');
+	// 	}
+	// 	lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+	// });
 
 	// Banner
 	$('.mf-banner-slide').slick({
