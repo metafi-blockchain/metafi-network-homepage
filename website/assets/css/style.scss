@@ -128,9 +128,9 @@ a {
 	justify-content: center;
 	z-index: 998;
 	transform-origin: center;
-	transition: all ease-in-out .4s;
+	transition: all ease-in-out 0.4s;
 	opacity: 1;
-	.hide{
+	.hide {
 		opacity: 0;
 	}
 	img {
@@ -158,6 +158,25 @@ a {
 	min-height: 720px;
 	@media (max-width: 1199px) {
 		max-height: 720px;
+	}
+}
+.mf-logo-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1;
+	color: #ffffff;
+	@media (max-width: 767px) {
+		gap: 5px;
+		font-size: 12px;
+	}
+	img {
+		height: 80px;
+		@media (max-width: 767px) {
+			height: 28px;
+		}
 	}
 }
 @import 'container';
