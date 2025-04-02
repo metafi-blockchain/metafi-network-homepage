@@ -951,11 +951,6 @@ a {
     bottom: 121px;
   }
 }
-@media (max-width: 991px) {
-  .mf-banner-buttons {
-    bottom: 62px;
-  }
-}
 @media (max-width: 767px) {
   .mf-banner-buttons {
     flex-wrap: wrap;
