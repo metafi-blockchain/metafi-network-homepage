@@ -4,10 +4,10 @@ metadata:
   name: metafi-landing-page-service
   namespace: metafi-system
 spec:
-  type: NodePort
+  type: ClusterIP   # ✅ Chuyển từ NodePort thành ClusterIP
   selector:
     app: metafi-landing-page
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30008 
+      protocol: TCP
