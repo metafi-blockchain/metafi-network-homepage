@@ -1,7 +1,12 @@
-docker buildx build --platform linux/amd64 -t metafi/metafi-landing-page:1.0.3 --load .
+docker build -t metafi/metafi-landing-page:1.0.2 .
 
+docker buildx build \
+  --platform linux/amd64 \
+  -t metafi/metafi-landing-page:1.0.2 \
+  --push \
+  .
 
-docker buildx build --platform linux/amd64,linux/arm64 -t metafi/metafi-landing-page:1.0.3 --push .
+docker tag metafi/metafi-landing-page:1.0.2 metafi/metafi-landing-page:latest
 
-
-docker push metafi/metafi-landing-page:1.0.3
+docker push metafi/metafi-landing-page:1.0.2
+docker push metafi/metafi-landing-page:latest

@@ -6,9 +6,6 @@ const tooltipList = [...tooltipTriggerList].map(
 );
 $(document).ready(function () {
 	window.scrollTo(0, 0);
-	// AOS.init({
-	// 	duration: 800
-	// });
 	const setMenuMb = () => {
 		if (window.innerWidth > 1199) {
 			$('#main-menu').removeClass('show');
