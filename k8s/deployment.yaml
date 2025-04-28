@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
       - name: metafi-home-page-container
-        image: metafi/metafi-landing-page:0.1.1
+        image: metafi/metafi-landing-page:1.0.3
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
         resources:
